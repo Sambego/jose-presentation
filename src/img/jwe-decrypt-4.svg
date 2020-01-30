@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1559px" height="440px" viewBox="0 0 1559 440" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>jwe-decrypt</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="JWE-decrypt">
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="3" y="7" width="154" height="114" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="3" y="141" width="348" height="161" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="605" y="265" width="535" height="169" rx="10"></rect>
+            <text id="BASE64(-Header-)" font-family="Montserrat-Bold, Montserrat" font-size="25" font-weight="bold" fill="#000000">
+                <tspan x="19" y="44">BASE64(</tspan>
+                <tspan x="19" y="74">  Header</tspan>
+                <tspan x="19" y="104">)</tspan>
+            </text>
+            <text id="{-}" font-family="Monaco" font-size="25" font-weight="normal" fill="#000000">
+                <tspan x="23" y="180">{</tspan>
+                <tspan x="23" y="211"></tspan>
+                <tspan x="23" y="242"></tspan>
+                <tspan x="23" y="273">}</tspan>
+            </text>
+            <rect id="Rectangle" fill="#FAC863" x="988" y="338" width="50" height="43" rx="5"></rect>
+            <text id="&quot;alg&quot;:-&quot;RSA-OAEP&quot;,-&quot;" font-family="Monaco" font-size="25" font-weight="normal" fill="#000000">
+                <tspan x="49" y="217">"alg": "RSA-OAEP",</tspan>
+                <tspan x="49" y="248">"enc": "A256GCM"</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="227" y="7" width="308" height="114" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="167" y="7" width="50" height="114" rx="10"></rect>
+            <text id="BASE64(-JWE-Encrypte" font-family="Montserrat-Bold, Montserrat" font-size="25" font-weight="bold" fill="#000000">
+                <tspan x="245" y="45">BASE64(</tspan>
+                <tspan x="245" y="75">  JWE Encrypted key</tspan>
+                <tspan x="245" y="105">)</tspan>
+            </text>
+            <text id="decryptA236GCM(-)" font-family="Monaco" font-size="35" font-weight="normal" fill="#000000">
+                <tspan x="621" y="316">decryptA236GCM(</tspan>
+                <tspan x="621" y="360"> </tspan>
+                <tspan x="621" y="404">)</tspan>
+            </text>
+            <text id="cipher,-cek,-iv,-at" font-family="Monaco" font-size="35" font-weight="normal" fill="#000000">
+                <tspan x="719" y="369">cipher, cek, iv, at</tspan>
+            </text>
+            <text id="." font-family="Montserrat-Bold, Montserrat" font-size="50" font-weight="bold" fill="#000000">
+                <tspan x="185.45" y="69">.</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="605" y="7" width="308" height="114" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="545" y="7" width="50" height="114" rx="10"></rect>
+            <text id="BASE64(-Initializati" font-family="Montserrat-Bold, Montserrat" font-size="25" font-weight="bold" fill="#000000">
+                <tspan x="621" y="44">BASE64(</tspan>
+                <tspan x="621" y="74">  Initialization Vector</tspan>
+                <tspan x="621" y="104">)</tspan>
+            </text>
+            <text id="." font-family="Montserrat-Bold, Montserrat" font-size="50" font-weight="bold" fill="#000000">
+                <tspan x="563.45" y="69">.</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="983" y="7" width="192" height="114" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="923" y="7" width="50" height="114" rx="10"></rect>
+            <text id="BASE64(-Cipher-text" font-family="Montserrat-Bold, Montserrat" font-size="25" font-weight="bold" fill="#000000">
+                <tspan x="999" y="44">BASE64(</tspan>
+                <tspan x="999" y="74">  Cipher text</tspan>
+                <tspan x="999" y="104">)</tspan>
+            </text>
+            <text id="." font-family="Montserrat-Bold, Montserrat" font-size="50" font-weight="bold" fill="#000000">
+                <tspan x="941.45" y="69">.</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="1245" y="7" width="308" height="114" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="1185" y="7" width="50" height="114" rx="10"></rect>
+            <text id="BASE64(-Authenticati" font-family="Montserrat-Bold, Montserrat" font-size="25" font-weight="bold" fill="#000000">
+                <tspan x="1261" y="44">BASE64(</tspan>
+                <tspan x="1261" y="74">  Authentication Tag</tspan>
+                <tspan x="1261" y="104">)</tspan>
+            </text>
+            <text id="." font-family="Montserrat-Bold, Montserrat" font-size="50" font-weight="bold" fill="#000000">
+                <tspan x="1203.45" y="69">.</tspan>
+            </text>
+            <path id="Line-5" d="M537,238 L537,300.5 L581,300.5 L581,290.5 L605,302.5 L581,314.5 L581,304.5 L533,304.5 L533,242 L349,242 L349,238 L537,238 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line-6" d="M1081,119 L1081,241 L1091,241 L1079,265 L1067,241 L1077,241 L1077,119 L1081,119 Z" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+        <path id="Line-7" d="M389.5,119.5 L389.5,196.795 L655.5,196.795856 L655.5,241.5 L665.5,241.5 L653.5,265.5 L641.5,241.5 L651.5,241.5 L651.5,200.795 L385.5,200.795856 L385.5,119.5 L389.5,119.5 Z" fill="#000000" fill-rule="nonzero"></path>
+        <path id="Line-8" d="M764.5,119.5 L764.5,241.5 L774.5,241.5 L762.5,265.5 L750.5,241.5 L760.5,241.5 L760.5,119.5 L764.5,119.5 Z" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

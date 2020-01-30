@@ -10,7 +10,8 @@ import {
   Text,
   Highlight,
   Video,
-  Footer
+  Footer,
+  Code
 } from "@sambego/diorama";
 
 import Speedy from "./video/speedy.mp4";
@@ -31,6 +32,16 @@ import rsaEncryption from "./img/rsa-encrypting.svg";
 import rsaDecryption from "./img/rsa-decrypting.svg";
 import simpleRsaDemo from "./img/simple-rsa-demo.png";
 import rsaDemo from "./img/rsa-demo.png";
+import jws from "./img/jws.svg";
+import jwe from "./img/jwe.svg";
+import jweHeader from "./img/jwe-header.svg";
+import jweEncKey from "./img/jwe-enc-key.svg";
+import jweDecrypt1 from "./img/jwe-decrypt-1.svg";
+import jweDecrypt2 from "./img/jwe-decrypt-2.svg";
+import jweDecrypt3 from "./img/jwe-decrypt-3.svg";
+import jweDecrypt4 from "./img/jwe-decrypt-4.svg";
+import jweDecrypt5 from "./img/jwe-decrypt-5.svg";
+import { createPortal } from "react-dom";
 
 function SlideDeck() {
   return (
@@ -113,13 +124,11 @@ function SlideDeck() {
       </Slide>
       <Slide>
         <Text>
-          <strong>Disclaimer</strong>: I am not an
-          <Highlight color="#fac863">exprert in cryptography</Highlight> and I
-          might{" "}
+          <strong>Disclaimer</strong>: I might{" "}
           <Highlight color="#fac863">
             simplify certain things to try explain them
           </Highlight>{" "}
-          in an easy way.
+          in an easier way.
         </Text>
       </Slide>
       <Slide>
@@ -753,6 +762,20 @@ function SlideDeck() {
         <Image src={rsaDecryption} alt="Schema of how RSA decryption works" />
       </Slide>
       <Slide>
+        <Subtitle>Symmetrical algorithms</Subtitle>
+        <Text>
+          <Highlight color="#fac863">
+            Direct AES, AES key wrap, AES GCM
+          </Highlight>
+        </Text>
+      </Slide>
+      <Slide>
+        <Subtitle>Assymetrical algorithms</Subtitle>
+        <Text>
+          <Highlight color="#fac863">RSA OAEP, RSA OAEP, ECDH-ES</Highlight>
+        </Text>
+      </Slide>
+      <Slide>
         <Image src={simpleRsaDemo} alt="A screenshot of the simple RSA demo" />
       </Slide>
       <Slide>
@@ -816,122 +839,26 @@ function SlideDeck() {
         </Subtitle>
       </Slide>
       <Slide>
-        <Subtitle style={{ textAlign: "left" }}>
-          <Highlight
-            color="#fac863"
-            style={{
-              display: "inline-block",
-              width: "11rem",
-              textAlign: "center"
-            }}
-          >
-            J
-          </Highlight>
-          <span style={{ color: "#c0c5ce" }}>SON</span>
-          <br />
-          <Highlight
-            color="#fac863"
-            style={{
-              display: "inline-block",
-              width: "11rem",
-              textAlign: "center"
-            }}
-          >
-            W
-          </Highlight>
-          <span style={{ color: "#c0c5ce" }}>eb</span>
-          <br />
-          <Highlight
-            color="#fac863"
-            style={{
-              display: "inline-block",
-              width: "11rem",
-              textAlign: "center"
-            }}
-          >
-            S
-          </Highlight>
-          ignature
+        <Subtitle>
+          Why <Highlight color="#fac863">JSON</Highlight>?
         </Subtitle>
       </Slide>
       <Slide>
-        <Subtitle style={{ textAlign: "left" }}>
-          <Highlight
-            color="#fac863"
-            style={{
-              display: "inline-block",
-              width: "11rem",
-              textAlign: "center"
-            }}
-          >
-            J
-          </Highlight>
-          <span style={{ color: "#c0c5ce" }}>SON</span>
-          <br />
-          <Highlight
-            color="#fac863"
-            style={{
-              display: "inline-block",
-              width: "11rem",
-              textAlign: "center"
-            }}
-          >
-            W
-          </Highlight>
-          <span style={{ color: "#c0c5ce" }}>eb</span>
-          <br />
-          <Highlight
-            color="#fac863"
-            style={{
-              display: "inline-block",
-              width: "11rem",
-              textAlign: "center"
-            }}
-          >
-            E
-          </Highlight>
-          ncryption
-        </Subtitle>
+        <Text>
+          The JSON format is often used for{" "}
+          <Highlight color="#fac863">
+            serializing and transmitting structured data
+          </Highlight>{" "}
+          over a <Highlight color="#fac863">network connection</Highlight>.
+        </Text>
       </Slide>
       <Slide>
-        <Subtitle style={{ textAlign: "left" }}>
-          <Highlight
-            color="#fac863"
-            style={{
-              display: "inline-block",
-              width: "11rem",
-              textAlign: "center"
-            }}
-          >
-            J
-          </Highlight>
-          <span style={{ color: "#c0c5ce" }}>SON</span>
-          <br />
-          <Highlight
-            color="#fac863"
-            style={{
-              display: "inline-block",
-              width: "11rem",
-              textAlign: "center"
-            }}
-          >
-            W
-          </Highlight>
-          <span style={{ color: "#c0c5ce" }}>eb</span>
-          <br />
-          <Highlight
-            color="#fac863"
-            style={{
-              display: "inline-block",
-              width: "11rem",
-              textAlign: "center"
-            }}
-          >
-            T
-          </Highlight>
-          oken
-        </Subtitle>
+        <Text>
+          <Highlight color="#fac863">Excelent support</Highlight> in most
+          programing languages.
+        </Text>
       </Slide>
+
       <Slide>
         <Subtitle style={{ textAlign: "left" }}>
           <Highlight
@@ -972,6 +899,27 @@ function SlideDeck() {
         </Subtitle>
       </Slide>
       <Slide>
+        <Code
+          code={`{
+  "keys": [
+    {
+      "alg": "RS256",
+      "kty": "RSA",
+      "use": "sig",
+      "x5c": [
+        "MIIDAzC...8JufiAw=="
+      ],
+      "n": "qJdLkrX...SE4havw",
+      "e": "AQAB",
+      "kid": "NDZDOTV...E1NDgxNg",
+      "x5t": "NDZDOTV...E1NDgxNg"
+    }
+  ]
+}`}
+        />
+      </Slide>
+
+      <Slide>
         <Subtitle style={{ textAlign: "left" }}>
           <Highlight
             color="#fac863"
@@ -1005,32 +953,332 @@ function SlideDeck() {
               textAlign: "center"
             }}
           >
-            A
+            S
           </Highlight>
-          lgorithm
+          ignature
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Image src={jws} alt="JWS explanation" />
+      </Slide>
+      <Slide>
+        <Subtitle
+          style={{
+            maxWidth: "80vw",
+            wordWrap: "break-word",
+            textAlign: "left"
+          }}
+        >
+          <span style={{ textTransform: "none" }}>
+            eyJhbGciOiJIUzI1NiJ9.eyJmb28iOiJiYXIifQ.CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
+          </span>
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Subtitle
+          style={{
+            maxWidth: "80vw",
+            wordWrap: "break-word",
+            textAlign: "left"
+          }}
+        >
+          <span style={{ textTransform: "none" }}>
+            <Highlight color="#fac863">eyJhbGciOiJIUzI1NiJ9</Highlight>
+            .eyJmb28iOiJiYXIifQ.CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
+          </span>
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Subtitle>JOSE Header</Subtitle>
+        <Code
+          code={`{
+  alg: "HS256"
+}`}
+        />
+      </Slide>
+      <Slide>
+        <Subtitle
+          style={{
+            maxWidth: "80vw",
+            wordWrap: "break-word",
+            textAlign: "left"
+          }}
+        >
+          <span style={{ textTransform: "none" }}>
+            eyJhbGciOiJIUzI1NiJ9.
+            <Highlight color="#fac863">eyJmb28iOiJiYXIifQ</Highlight>
+            .CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
+          </span>
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Subtitle>Payload</Subtitle>
+        <Code
+          code={`{
+  foo: "bar"
+}`}
+        />
+      </Slide>
+      <Slide>
+        <Subtitle
+          style={{
+            maxWidth: "80vw",
+            wordWrap: "break-word",
+            textAlign: "left"
+          }}
+        >
+          <span style={{ textTransform: "none" }}>
+            eyJhbGciOiJIUzI1NiJ9.eyJmb28iOiJiYXIifQ.
+            <Highlight color="#fac863">
+              CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
+            </Highlight>
+          </span>
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Subtitle>Signature</Subtitle>
+        <Code
+          code={`HMACSHA256(
+  base64UrlEncode(header) + "." +
+  base64UrlEncode(payload),
+  "secret"
+)`}
+        />
+      </Slide>
+
+      <Slide note="https://medium.facilelogin.com/jwt-jws-and-jwe-for-not-so-dummies-b63310d201a3">
+        <Subtitle style={{ textAlign: "left" }}>
+          <Highlight
+            color="#fac863"
+            style={{
+              display: "inline-block",
+              width: "11rem",
+              textAlign: "center"
+            }}
+          >
+            J
+          </Highlight>
+          <span style={{ color: "#c0c5ce" }}>SON</span>
+          <br />
+          <Highlight
+            color="#fac863"
+            style={{
+              display: "inline-block",
+              width: "11rem",
+              textAlign: "center"
+            }}
+          >
+            W
+          </Highlight>
+          <span style={{ color: "#c0c5ce" }}>eb</span>
+          <br />
+          <Highlight
+            color="#fac863"
+            style={{
+              display: "inline-block",
+              width: "11rem",
+              textAlign: "center"
+            }}
+          >
+            E
+          </Highlight>
+          ncryption
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Image src={jwe} alt="JWE explanation" />
+      </Slide>
+      <Slide>
+        <Subtitle>JOSE Header</Subtitle>
+        <Image src={jweHeader} />
+      </Slide>
+      <Slide>
+        <Subtitle>Encrypted key</Subtitle>
+        <Image src={jweEncKey} />
+      </Slide>
+      <Slide>
+        <Subtitle>Decrypt the JWE</Subtitle>
+        <Image src={jweDecrypt1} />
+      </Slide>
+      <Slide>
+        <Subtitle>Decrypt the JWE</Subtitle>
+        <Image src={jweDecrypt2} />
+      </Slide>
+      <Slide>
+        <Subtitle>Decrypt the JWE</Subtitle>
+        <Image src={jweDecrypt3} />
+      </Slide>
+      <Slide>
+        <Subtitle>Decrypt the JWE</Subtitle>
+        <Image src={jweDecrypt4} />
+      </Slide>
+      <Slide>
+        <Subtitle>Decrypt the JWE</Subtitle>
+        <Image src={jweDecrypt5} />
+      </Slide>
+
+      <Slide>
+        <Text>
+          Both JSON Web Signatures and JSON Web Encryption can be serialized as{" "}
+          <Highlight color="#fac863">compact</Highlight> (a string) and{" "}
+          <Highlight color="#fac863">JSON</Highlight>.
+        </Text>
+      </Slide>
+
+      <Slide>
+        <Subtitle style={{ textAlign: "left" }}>
+          <Highlight
+            color="#fac863"
+            style={{
+              display: "inline-block",
+              width: "11rem",
+              textAlign: "center"
+            }}
+          >
+            J
+          </Highlight>
+          <span style={{ color: "#c0c5ce" }}>SON</span>
+          <br />
+          <Highlight
+            color="#fac863"
+            style={{
+              display: "inline-block",
+              width: "11rem",
+              textAlign: "center"
+            }}
+          >
+            W
+          </Highlight>
+          <span style={{ color: "#c0c5ce" }}>eb</span>
+          <br />
+          <Highlight
+            color="#fac863"
+            style={{
+              display: "inline-block",
+              width: "11rem",
+              textAlign: "center"
+            }}
+          >
+            T
+          </Highlight>
+          oken
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Text>
+          A JSON Web Token{" "}
+          <Highlight color="#fac863">can be a JWT or a JWE</Highlight>.
+        </Text>
+      </Slide>
+      <Slide>
+        <Text>
+          <Highlight color="#fac863">A JWS is more commonly used</Highlight> as
+          a JWT.
+        </Text>
+      </Slide>
+      <Slide>
+        <Subtitle>JWT Header</Subtitle>
+        <Code
+          code={`{
+  "alg": "HS256",
+  "typ": "JWT"
+}`}
+        />
+      </Slide>
+      <Slide>
+        <Subtitle>Access Token</Subtitle>
+        <Code
+          code={`{
+  "iss": "https://sambego.eu.auth0.com/",
+  "sub": "auth0|5b10...ae62",
+  "aud": [
+    "my-audience",
+  ],
+  "iat": 1554361012,
+  "exp": 1554368212,
+  "azp": "gkWZ...Nx9y",
+  "scope": "openid profile"
+}`}
+        />
+      </Slide>
+      <Slide>
+        <Subtitle>ID Token</Subtitle>
+        <Code
+          code={`{
+  "nickname": "sambellen",
+  "name": "sambellen@gmail.com",
+  "picture": "https://s.gravatar.com/avatar/...avatars.png",
+  "updated_at": "2019-04-04T06:56:52.907Z",
+  "iss": "https://sambego.eu.auth0.com/",
+  "sub": "auth0|5b10....ae62",
+  "aud": "gkWZ...kNx9y",
+  "iat": 1554361012,
+  "exp": 1554397012,
+}`}
+        />
+      </Slide>
+      {/* -- End JOSE -- */}
+
+      <Slide style={{ background: "#fac863" }}>
+        <Subtitle style={{ letterSpacing: "4rem" }}>Summary</Subtitle>
+      </Slide>
+      <Slide>
+        <Text>
+          Hashing compresses and makes it virtually impossible to get to the
+          real data.
+        </Text>
+      </Slide>
+      <Slide>
+        <Text>Keyed hashes protect the integrety of data.</Text>
+      </Slide>
+      <Slide>
+        <Text>
+          Digital signatures allows third parties to verify the validity and
+          origin of data.
+        </Text>
+      </Slide>
+      <Slide>
+        <Text>Encryption allows only authorized people to read the data.</Text>
+      </Slide>
+      <Slide>
+        <Text>
+          JOSE is a set of standards, based on JSON that help us with signatures
+          and encryption on the web.
+        </Text>
+      </Slide>
+      <Slide>
+        <Subtitle>
+          <a
+            style={{ color: "#000", borderColor: "#fac863" }}
+            href="https://jose.sambego.tech"
+          >
+            jose.sambego.tech
+          </a>
         </Subtitle>
       </Slide>
       <Slide>
         <Subtitle>
-          Why <Highlight color="#fac863">JSON</Highlight>?
+          <a
+            style={{ color: "#000", borderColor: "#fac863" }}
+            href="https://jwt.io"
+          >
+            jwt.io
+          </a>
         </Subtitle>
       </Slide>
       <Slide>
-        <Text>
-          The JSON format is often used for{" "}
-          <Highlight color="#fac863">
-            serializing and transmitting structured data
-          </Highlight>{" "}
-          over a <Highlight color="#fac863">network connection</Highlight>.
-        </Text>
+        <Subtitle>
+          <a
+            style={{ color: "#000", borderColor: "#fac863" }}
+            href="https://auth0.com/blog/how-secure-are-encryption-hashing-encoding-and-obfuscation"
+          >
+            auth0.com/blog/how-secure-are-encryption-hashing-encoding-and-obfuscation
+          </a>
+        </Subtitle>
       </Slide>
-      <Slide>
-        <Text>
-          <Highlight color="#fac863">Excelent support</Highlight> in most
-          programing languages.
-        </Text>
+      <Slide style={{ background: "#fac863" }}>
+        <Subtitle style={{ letterSpacing: "4rem" }}>Thanks</Subtitle>
       </Slide>
-      {/* -- End JOSE -- */}
     </Deck>
   );
 }
