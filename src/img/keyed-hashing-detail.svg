@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1259px" height="567px" viewBox="0 0 1259 567" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>keyed-hashing-detail</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Keyed-hashing-detail">
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="332" y="4" width="588" height="553" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="2" y="4" width="230" height="104" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="1020" y="453" width="230" height="104" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="372" y="103" width="230" height="104" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" transform="translate(454.000000, 356.000000) scale(1, -1) translate(-454.000000, -356.000000) " x="372" y="330" width="164" height="52" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="652" y="41" width="230" height="104" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="652" y="166" width="230" height="104" rx="10"></rect>
+            <text id="Secret-Key" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="388.8425" y="168">Secret Key</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="372" y="368" width="230" height="154" rx="10"></rect>
+            <text id="Inner-Key-+-Message" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="399.08" y="417">Inner Key</tspan>
+                <tspan x="481.01" y="460" font-size="20">+</tspan>
+                <tspan x="492.99" y="460"></tspan>
+                <tspan x="406.57" y="484">Message</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="652" y="368" width="230" height="154" rx="10"></rect>
+            <text id="Inner-Hash" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="397.48" y="356">Inner Hash</tspan>
+            </text>
+            <text id="Outer-Key-+-Inner-Ha" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="674.6" y="424">Outer Key</tspan>
+                <tspan x="761.01" y="467" font-size="20">+</tspan>
+                <tspan x="772.99" y="467"></tspan>
+                <tspan x="667.215" y="491">Inner Hash</tspan>
+            </text>
+            <text id="Inner-Key" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="679.58" y="103">Inner Key</tspan>
+            </text>
+            <text id="Outer-Key" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="675.1" y="231">Outer Key</tspan>
+            </text>
+            <text id="The-quick-brown-fox" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="29.11" y="39">The quick brown </tspan>
+                <tspan x="39.68" y="63">fox jumps over </tspan>
+                <tspan x="53.21" y="87">the lazy dog</tspan>
+            </text>
+            <text id="150c26248eda24bb-f94" font-family="Monaco" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="1044" y="477">150c26248eda24bb</tspan>
+                <tspan x="1044" y="500">f94aed252ccb4f14</tspan>
+                <tspan x="1044" y="523">33aebeddd7ad83fd</tspan>
+                <tspan x="1044" y="546">8f1f581000470f62</tspan>
+            </text>
+            <path id="Line" d="M249,51 L249,61 L293,61 L293,51 L317,63 L293,75 L293,65 L249,65 L249,75 L245,75 L245,51 L249,51 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M604,108 L604,118 L658,118 L658,108 L682,120 L658,132 L658,122 L604,122 L604,132 L600,132 L600,108 L604,108 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M604,175 L604,185 L658,185 L658,175 L682,187 L658,199 L658,189 L604,189 L604,199 L600,199 L600,175 L604,175 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M604,433 L604,443 L658,443 L658,433 L682,445 L658,457 L658,447 L604,447 L604,457 L600,457 L600,433 L604,433 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M937,500 L937,510 L982,510 L982,500 L1006,512 L982,524 L982,514 L937,514 L937,524 L933,524 L933,500 L937,500 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line-3" d="M628,289 L628,320 L638,320 L626,344 L614,320 L624,320 L624,289 L628,289 Z" fill="#000000" fill-rule="nonzero"></path>
+            <rect id="Rectangle" stroke="#000000" stroke-width="2" x="347" y="20" width="559" height="270" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="2" x="347" y="311" width="559" height="229" rx="10"></rect>
+        </g>
+    </g>
+</svg>

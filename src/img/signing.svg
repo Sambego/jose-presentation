@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1226px" height="299px" viewBox="0 0 1226 299" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>signing</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Signing">
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="662" y="139" width="230" height="153" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="662" y="5" width="230" height="104" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="332" y="139" width="230" height="153" rx="10"></rect>
+            <text id="Hashing-Algorithm" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="371.5675" y="200">Hashing</tspan>
+                <tspan x="354.2425" y="243">Algorithm</tspan>
+            </text>
+            <text id="(RSA)" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="748.96" y="271">(RSA)</tspan>
+            </text>
+            <text id="(SHA256)" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="400.01" y="271">(SHA256)</tspan>
+            </text>
+            <text id="Signing-Algorithm" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="707.115" y="200">Signing</tspan>
+                <tspan x="684.2425" y="243">Algorithm</tspan>
+            </text>
+            <text id="Private-Key" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="672.0525" y="70">Private Key</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="2" y="163" width="230" height="104" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="992" y="163" width="230" height="104" rx="10"></rect>
+            <text id="The-quick-brown-fox" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="29.11" y="198">The quick brown </tspan>
+                <tspan x="39.68" y="222">fox jumps over </tspan>
+                <tspan x="53.21" y="246">the lazy dog</tspan>
+            </text>
+            <text id="d7a8fbb307d78094-…-…" font-family="Monaco" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="1016.08594" y="187">d7a8fbb307d78094</tspan>
+                <tspan x="1097.09912" y="210">…</tspan>
+                <tspan x="1097.09912" y="233">…</tspan>
+                <tspan x="1016.08594" y="256">2d02d0bf37c9e592</tspan>
+            </text>
+            <path id="Line" d="M579,203 L579,213 L623,213 L623,203 L647,215 L623,227 L623,217 L579,217 L579,227 L575,227 L575,203 L579,203 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M249,204 L249,214 L293,214 L293,204 L317,216 L293,228 L293,218 L249,218 L249,228 L245,228 L245,204 L249,204 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M909,203 L909,213 L954,213 L954,203 L978,215 L954,227 L954,217 L909,217 L909,227 L905,227 L905,203 L909,203 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line-4" d="M779,108 L779,148 L789,148 L777,172 L765,148 L775,148 L775,108 L779,108 Z" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
