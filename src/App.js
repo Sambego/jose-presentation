@@ -24,6 +24,13 @@ import keyedHashing from "./img/keyed-hashing.svg";
 import keyedHashingDetail from "./img/keyed-hashing-detail.svg";
 import signing from "./img/signing.svg";
 import verifying from "./img/verifying.svg";
+import encrypting from "./img/encrypting.svg";
+import decrypting from "./img/decrypting.svg";
+import rsaKeyGeneration from "./img/rsa-key-generation.svg";
+import rsaEncryption from "./img/rsa-encrypting.svg";
+import rsaDecryption from "./img/rsa-decrypting.svg";
+import simpleRsaDemo from "./img/simple-rsa-demo.png";
+import rsaDemo from "./img/rsa-demo.png";
 
 function SlideDeck() {
   return (
@@ -688,6 +695,68 @@ function SlideDeck() {
       {/* -- Start Encription -- */}
       <Slide style={{ background: "#fac863" }}>
         <Subtitle style={{ letterSpacing: "4rem" }}>Encryption</Subtitle>
+      </Slide>
+      <Slide>
+        <Text>
+          When encrypting data, we can not only ensure its{" "}
+          <Highlight color="#fac863">integrity and authenticity</Highlight>{" "}
+          (like keyed hashes), the data will stay{" "}
+          <Highlight color="#fac863">secret for outsiders</Highlight>.
+        </Text>
+      </Slide>
+      <Slide>
+        <Text>
+          You need either a <Highlight color="#fac863">private key</Highlight>,{" "}
+          <Highlight color="#fac863">secret key</Highlight> or{" "}
+          <Highlight color="#fac863">password</Highlight> to read the data
+        </Text>
+      </Slide>
+      <Slide>
+        <Text>
+          The sender asks for{" "}
+          <Highlight color="#fac863">the receiver's public key</Highlight>, and
+          uses it to <Highlight color="#fac863">encrypt the message</Highlight>.
+        </Text>
+      </Slide>
+      <Slide>
+        <Text>
+          The encypted message is often called{" "}
+          <Highlight color="#fac863">a cipher</Highlight>.
+        </Text>
+      </Slide>
+      <Slide>
+        <Text>
+          When the receiver receives the cipher, they use{" "}
+          <Highlight color="#fac863">
+            their matching private key to decrypt
+          </Highlight>{" "}
+          the message.
+        </Text>
+      </Slide>
+      <Slide>
+        <Image src={encrypting} alt="Schema of how encrypting works" />
+      </Slide>
+      <Slide>
+        <Image src={decrypting} alt="Schema of how decrypting works" />
+      </Slide>
+      <Slide>
+        <Subtitle>Generate&nbsp;keys</Subtitle>
+        <Image
+          src={rsaKeyGeneration}
+          alt="Schema of how RSA key generation works"
+        />
+      </Slide>
+      <Slide>
+        <Image src={rsaEncryption} alt="Schema of how RSA encryption works" />
+      </Slide>
+      <Slide>
+        <Image src={rsaDecryption} alt="Schema of how RSA decryption works" />
+      </Slide>
+      <Slide>
+        <Image src={simpleRsaDemo} alt="A screenshot of the simple RSA demo" />
+      </Slide>
+      <Slide>
+        <Image src={rsaDemo} alt="A screenshot of the RSA demo" />
       </Slide>
       {/* -- End Encription -- */}
 

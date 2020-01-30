@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="909px" height="612px" viewBox="0 0 909 612" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>rsa-key-generation</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RSA-key-generation">
+            <g id="Private-Key" transform="translate(2.000000, 450.000000)">
+                <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="0" y="0" width="247" height="153" rx="10"></rect>
+                <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="0" y="45" width="890" height="108" rx="10"></rect>
+                <text font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                    <tspan x="64.53" y="30">Private Key</tspan>
+                </text>
+                <text id="Modulus-(n):-p-*-q-=" font-family="Monaco" font-size="35" font-weight="normal">
+                    <tspan x="18" y="86" fill="#000000">Modulus (n):          </tspan>
+                    <tspan x="480.075195" y="86" fill="#A7ADBA">p * q        </tspan>
+                    <tspan x="753.119629" y="86" fill="#000000">= 3233</tspan>
+                    <tspan x="879.140137" y="86" fill="#A7ADBA"></tspan>
+                    <tspan x="18" y="130" fill="#000000">Private exponent (d): </tspan>
+                    <tspan x="480.075195" y="130" fill="#A7ADBA">e (mod </tspan>
+                    <tspan x="627.099121" y="130" font-family="Menlo-Regular, Menlo" fill="#A7ADBA">λ</tspan>
+                    <tspan x="648.170898" y="130" fill="#A7ADBA">(n)) </tspan>
+                    <tspan x="753.187988" y="130" fill="#000000">= 413</tspan>
+                </text>
+            </g>
+            <g id="Public-Key" transform="translate(2.000000, 255.000000)">
+                <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="0" y="0" width="230" height="153" rx="10"></rect>
+                <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="0" y="45" width="890" height="125" rx="10"></rect>
+                <text id="Modulus-(n):-p-*-q-=" font-family="Monaco" font-size="35" font-weight="normal">
+                    <tspan x="18" y="101" fill="#000000">Modulus (n):         </tspan>
+                    <tspan x="459.071777" y="101" fill="#A7ADBA">p * q         </tspan>
+                    <tspan x="753.119629" y="101" fill="#000000">= 3233</tspan>
+                    <tspan x="879.140137" y="101" fill="#A7ADBA"></tspan>
+                    <tspan x="18" y="145" fill="#000000">Public exponent (e): </tspan>
+                    <tspan x="459.071777" y="145" fill="#A7ADBA">coprime(</tspan>
+                    <tspan x="627.099121" y="145" font-family="Menlo-Regular, Menlo" fill="#A7ADBA">λ</tspan>
+                    <tspan x="648.170898" y="145" fill="#A7ADBA">)    </tspan>
+                    <tspan x="753.187988" y="145" fill="#000000">= 17</tspan>
+                </text>
+                <text font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                    <tspan x="60.46" y="30">Public Key</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="2" y="4" width="230" height="153" rx="10"></rect>
+            <text id="Secrets" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="79.12" y="34">Secrets</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="2" y="49" width="890" height="181" rx="10"></rect>
+            <text id="Prime-number-1-(p)-=" font-family="Monaco" font-size="35" font-weight="normal" fill="#000000">
+                <tspan x="20" y="104">Prime number 1 (p)                 = 61</tspan>
+                <tspan x="20" y="153">Prime number 2 (q)                 = 53</tspan>
+                <tspan x="20" y="202" font-family="Menlo-Regular, Menlo">Lambda = λ</tspan>
+                <tspan x="230.717773" y="202">(n) = lcm(p − 1, q − 1)  = 780</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

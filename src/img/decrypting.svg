@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="909px" height="352px" viewBox="0 0 909 352" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>decrypting</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Decrypting">
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="332" y="9" width="230" height="153" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="332" y="192" width="230" height="153" rx="10"></rect>
+            <text id="Decryption-Algorithm" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="345.1425" y="253">Decryption</tspan>
+                <tspan x="354.2425" y="296">Algorithm</tspan>
+            </text>
+            <text id="Receiver’s-Private-K" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="353.515" y="77">Receiver’s</tspan>
+                <tspan x="342.0525" y="120">Private Key</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="2" y="216" width="230" height="104" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="662" y="223" width="230" height="104" rx="10"></rect>
+            <text id="The-quick-brown-fox" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="689.11" y="258">The quick brown </tspan>
+                <tspan x="699.68" y="282">fox jumps over </tspan>
+                <tspan x="713.21" y="306">the lazy dog</tspan>
+            </text>
+            <text id="d7a8fbb307d78094-…-…" font-family="Monaco" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="31.0859375" y="243">d7a8fbb307d78094</tspan>
+                <tspan x="112.099121" y="266">…</tspan>
+                <tspan x="112.099121" y="289">…</tspan>
+                <tspan x="31.0859375" y="312">2d02d0bf37c9e592</tspan>
+            </text>
+            <path id="Line" d="M579,256 L579,266 L623,266 L623,256 L647,268 L623,280 L623,270 L579,270 L579,280 L575,280 L575,256 L579,256 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M249,257 L249,267 L293,267 L293,257 L317,269 L293,281 L293,271 L249,271 L249,281 L245,281 L245,257 L249,257 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line-4" d="M449,161 L449,201 L459,201 L447,225 L435,201 L445,201 L445,161 L449,161 Z" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
