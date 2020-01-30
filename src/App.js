@@ -41,7 +41,7 @@ import jweDecrypt2 from "./img/jwe-decrypt-2.svg";
 import jweDecrypt3 from "./img/jwe-decrypt-3.svg";
 import jweDecrypt4 from "./img/jwe-decrypt-4.svg";
 import jweDecrypt5 from "./img/jwe-decrypt-5.svg";
-import { createPortal } from "react-dom";
+import cat from "./img/cat.svg";
 
 function SlideDeck() {
   return (
@@ -1277,7 +1277,22 @@ function SlideDeck() {
         </Subtitle>
       </Slide>
       <Slide style={{ background: "#fac863" }}>
-        <Subtitle style={{ letterSpacing: "4rem" }}>Thanks</Subtitle>
+        <Subtitle
+          style={{ letterSpacing: "4rem", position: "relative", zIndex: 1 }}
+        >
+          Thanks
+        </Subtitle>
+        <Image
+          src={cat}
+          style={{
+            position: "fixed",
+            bottom: 0,
+            left: "50%",
+            transform: "translate3d(-50%, 2px, 0)",
+            width: "20vw",
+            zIndex: 0
+          }}
+        />
       </Slide>
     </Deck>
   );
