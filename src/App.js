@@ -35,7 +35,9 @@ import rsaDemo from "./img/rsa-demo.png";
 import jws from "./img/jws.svg";
 import jwe from "./img/jwe.svg";
 import jweHeader from "./img/jwe-header.svg";
-import jweEncKey from "./img/jwe-enc-key.svg";
+import jweEncKey1 from "./img/jwe-enc-key-1.svg";
+import jweEncKey2 from "./img/jwe-enc-key-2.svg";
+import jweEncKey3 from "./img/jwe-enc-key-3.svg";
 import jweDecrypt1 from "./img/jwe-decrypt-1.svg";
 import jweDecrypt2 from "./img/jwe-decrypt-2.svg";
 import jweDecrypt3 from "./img/jwe-decrypt-3.svg";
@@ -762,7 +764,13 @@ function SlideDeck() {
         <Image src={rsaDecryption} alt="Schema of how RSA decryption works" />
       </Slide>
       <Slide>
-        <Subtitle>Symmetrical algorithms</Subtitle>
+        <Image src={simpleRsaDemo} alt="A screenshot of the simple RSA demo" />
+      </Slide>
+      <Slide>
+        <Image src={rsaDemo} alt="A screenshot of the RSA demo" />
+      </Slide>
+      <Slide>
+        <Subtitle>Symmetric algorithms</Subtitle>
         <Text>
           <Highlight color="#fac863">
             Direct AES, AES key wrap, AES GCM
@@ -770,16 +778,19 @@ function SlideDeck() {
         </Text>
       </Slide>
       <Slide>
-        <Subtitle>Assymetrical algorithms</Subtitle>
+        <Subtitle>Asymmetric algorithms</Subtitle>
         <Text>
           <Highlight color="#fac863">RSA OAEP, RSA OAEP, ECDH-ES</Highlight>
         </Text>
       </Slide>
       <Slide>
-        <Image src={simpleRsaDemo} alt="A screenshot of the simple RSA demo" />
-      </Slide>
-      <Slide>
-        <Image src={rsaDemo} alt="A screenshot of the RSA demo" />
+        <Text>
+          Symmetric algorithms are faster
+          <Highlight color="#fac863">
+            Symmetric algorithms are faster
+          </Highlight>{" "}
+          than asymmetric ones.
+        </Text>
       </Slide>
       {/* -- End Encription -- */}
 
@@ -1093,8 +1104,16 @@ function SlideDeck() {
         <Image src={jweHeader} />
       </Slide>
       <Slide>
-        <Subtitle>Encrypted key</Subtitle>
-        <Image src={jweEncKey} />
+        <Subtitle>Decrypt the Content Encryption Key</Subtitle>
+        <Image src={jweEncKey1} />
+      </Slide>
+      <Slide>
+        <Subtitle>Decrypt the Content Encryption Key</Subtitle>
+        <Image src={jweEncKey2} />
+      </Slide>
+      <Slide>
+        <Subtitle>Decrypt the Content Encryption Key</Subtitle>
+        <Image src={jweEncKey3} />
       </Slide>
       <Slide>
         <Subtitle>Decrypt the JWE</Subtitle>
