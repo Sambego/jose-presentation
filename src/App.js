@@ -61,6 +61,8 @@ import JWTAccess from "./img/jwt-access.svg";
 import JWTId from "./img/jwt-id.svg";
 import EncSym from "./img/sym-enc.svg";
 import EncAsym from "./img/asym-enc.svg";
+import JWSJSON from "./img/jws-json.svg";
+import JWEJSON from "./img/jwe-json.svg";
 
 function SlideDeck() {
   return (
@@ -188,7 +190,7 @@ function SlideDeck() {
           meaning it is practically impossible to invert.
         </Text>
       </Slide>
-      <Slide note="https://emn178.github.io/online-tools/sha256.html">
+      <Slide notes="Show https://emn178.github.io/online-tools/sha256.html">
         <Image src={hashing} alt="A schema illustrating how hashing works" />
       </Slide>
       <Slide>
@@ -215,7 +217,7 @@ function SlideDeck() {
           <Highlight color="#fac863">secret key</Highlight>.
         </Text>
       </Slide>
-      <Slide note="https://www.freeformatter.com/hmac-generator.html#ad-output">
+      <Slide notes="Show: https://www.freeformatter.com/hmac-generator.html#ad-output">
         <Image
           src={keyedHashing}
           alt="A schema illustrating how hashing works"
@@ -620,13 +622,13 @@ function SlideDeck() {
       <Slide style={{ background: "#fac863" }}>
         <Subtitle style={{ letterSpacing: "4rem" }}>Signing</Subtitle>
       </Slide>
-      <Slide>
+      <Slide notes="Integrity and authenticity">
         <Text>
           Digital signatures offer all properties of keyed hashes, plus{" "}
           <Highlight color="#fac863">cryptographic non-repudiation</Highlight>.
         </Text>
       </Slide>
-      <Slide>
+      <Slide notes="You can do that with HMAC as well, but need to share a secret. The more a secret is shared, the less secure it gets. Using a private/public key is better.">
         <Text>
           Cryptographic non-repudiation{" "}
           <Highlight color="#fac863">enables other parties</Highlight> than the
@@ -634,7 +636,7 @@ function SlideDeck() {
           <Highlight color="#fac863">check the signature's validity</Highlight>.
         </Text>
       </Slide>
-      <Slide>
+      <Slide notes="private/public keys">
         <Text>
           Digital signatures use{" "}
           <Highlight color="#fac863">public-key cryptography</Highlight>, or{" "}
@@ -674,7 +676,7 @@ function SlideDeck() {
       <Slide>
         <Image src={verifying} alt="A schema explaining how verifying works" />
       </Slide>
-      <Slide>
+      <Slide notes="RSA is named after the creators of the algorithm, Rivest–Shamir–Adleman">
         <Subtitle>Signing algorithms</Subtitle>
         <Text>
           The most commonly used public-key cryptography aproaches when signing
@@ -818,7 +820,7 @@ function SlideDeck() {
           exception.
         </Text>
       </Slide>
-      <Slide note="The Least Common Multiple">
+      <Slide notes="The Least Common Multiple">
         <Image
           src={rsaKeyGeneration}
           alt="Schema of how RSA key generation works"
@@ -958,7 +960,7 @@ function SlideDeck() {
       </Slide>
       <Slide>
         <Text>
-          <Highlight color="#fac863">Excelent support</Highlight> in most
+          <Highlight color="#fac863">Excellent support</Highlight> in most
           programing languages.
         </Text>
       </Slide>
@@ -1380,7 +1382,7 @@ function SlideDeck() {
         <Image src={JWSSignature} alt="JWS Signature" contain />
       </Slide>
 
-      <Slide note="https://medium.facilelogin.com/jwt-jws-and-jwe-for-not-so-dummies-b63310d201a3">
+      <Slide notes="https://medium.facilelogin.com/jwt-jws-and-jwe-for-not-so-dummies-b63310d201a3">
         <Subtitle style={{ textAlign: "left" }}>
           <Highlight
             color="#fac863"
@@ -1437,8 +1439,7 @@ function SlideDeck() {
       </Slide>
       <Slide>
         <Text>
-          <Highlight color="#fac863">The content</Highlight> is encrypted using
-          a{" "}
+          <Highlight color="#fac863">The cipher</Highlight> is encrypted using a{" "}
           <Highlight color="#fac863">
             symetrical content encryption key (CEK)
           </Highlight>
@@ -1478,7 +1479,7 @@ function SlideDeck() {
       <Slide>
         <Image src={jweDecrypt3} />
       </Slide>
-      <Slide>
+      <Slide notes="Not all algorithms require an initialization vector. If not needed it will be empty in the serialized JWE, meaning there will be 2 dots with nothing in between.">
         <Image src={jweDecrypt4} />
       </Slide>
       <Slide>
@@ -1491,6 +1492,12 @@ function SlideDeck() {
           <Highlight color="#fac863">compact</Highlight> (a string) and{" "}
           <Highlight color="#fac863">JSON</Highlight>.
         </Text>
+      </Slide>
+      <Slide>
+        <Image src={JWSJSON} contain />
+      </Slide>
+      <Slide>
+        <Image src={JWEJSON} contain />
       </Slide>
 
       <Slide>
@@ -1535,7 +1542,7 @@ function SlideDeck() {
       <Slide>
         <Text>
           A JSON Web Token{" "}
-          <Highlight color="#fac863">can be a JWT or a JWE</Highlight>.
+          <Highlight color="#fac863">can be a JWS or a JWE</Highlight>.
         </Text>
       </Slide>
       <Slide>
@@ -1547,7 +1554,7 @@ function SlideDeck() {
       <Slide>
         <Subtitle>JWT Header</Subtitle>
       </Slide>
-      <Slide>
+      <Slide notes="Notice the JWT type">
         <Image src={JWTHeader} contain />
       </Slide>
       <Slide>
