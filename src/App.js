@@ -22,6 +22,7 @@ import Sam from "./img/sam.png";
 import Poes from "./img/poes.jpg";
 import hashing from "./img/hashing.svg";
 import keyedHashing from "./img/keyed-hashing.svg";
+import keyedHashingRightWrong from "./img/keyed-hashing-right-wrong.svg";
 import keyedHashingDetail from "./img/keyed-hashing-detail.svg";
 import signing from "./img/signing.svg";
 import verifying from "./img/verifying.svg";
@@ -29,7 +30,11 @@ import encrypting from "./img/encrypting.svg";
 import decrypting from "./img/decrypting.svg";
 import rsaKeyGeneration from "./img/rsa-key-generation.svg";
 import rsaEncryption from "./img/rsa-encrypting.svg";
+import rsaEncryptionSimple from "./img/rsa-encrypting-simple.svg";
 import rsaDecryption from "./img/rsa-decrypting.svg";
+import rsaEncryptionFade from "./img/rsa-encrypting-fade.svg";
+import rsaDecryptionSimple from "./img/rsa-decrypting-simple.svg";
+import rsaDecryptionFade from "./img/rsa-decrypting-fade.svg";
 import simpleRsaDemo from "./img/simple-rsa-demo.png";
 import rsaDemo from "./img/rsa-demo.png";
 import jws from "./img/jws.svg";
@@ -44,6 +49,18 @@ import jweDecrypt3 from "./img/jwe-decrypt-3.svg";
 import jweDecrypt4 from "./img/jwe-decrypt-4.svg";
 import jweDecrypt5 from "./img/jwe-decrypt-5.svg";
 import cat from "./img/cat.svg";
+import JWK from "./img/jwk.png";
+import JWK2 from "./img/jwk2.png";
+import JWSHeader from "./img/jws-header.svg";
+import JWSPayload from "./img/jws-payload.svg";
+import JWSSignature from "./img/jws-signature.svg";
+import JWEKeyExpl1 from "./img/jwe-enc-expl-fade1.svg";
+import JWEKeyExpl2 from "./img/jwe-enc-expl-fade2.svg";
+import JWTHeader from "./img/jwt-header.svg";
+import JWTAccess from "./img/jwt-access.svg";
+import JWTId from "./img/jwt-id.svg";
+import EncSym from "./img/sym-enc.svg";
+import EncAsym from "./img/asym-enc.svg";
 
 function SlideDeck() {
   return (
@@ -171,7 +188,7 @@ function SlideDeck() {
           meaning it is practically impossible to invert.
         </Text>
       </Slide>
-      <Slide>
+      <Slide note="https://emn178.github.io/online-tools/sha256.html">
         <Image src={hashing} alt="A schema illustrating how hashing works" />
       </Slide>
       <Slide>
@@ -201,6 +218,12 @@ function SlideDeck() {
       <Slide note="https://www.freeformatter.com/hmac-generator.html#ad-output">
         <Image
           src={keyedHashing}
+          alt="A schema illustrating how hashing works"
+        />
+      </Slide>
+      <Slide>
+        <Image
+          src={keyedHashingRightWrong}
           alt="A schema illustrating how hashing works"
         />
       </Slide>
@@ -584,6 +607,13 @@ function SlideDeck() {
           Bit
         </Subtitle>
       </Slide>
+
+      <Slide>
+        <Text>
+          Hashes are often used to{" "}
+          <Highlight color="#fac863">store passwords</Highlight>.
+        </Text>
+      </Slide>
       {/* -- End Hashing -- */}
 
       {/* -- Start Signing -- */}
@@ -724,15 +754,43 @@ function SlideDeck() {
       </Slide>
       <Slide>
         <Text>
-          The sender asks for{" "}
-          <Highlight color="#fac863">the receiver's public key</Highlight>, and
-          uses it to <Highlight color="#fac863">encrypt the message</Highlight>.
+          The encypted message is often called{" "}
+          <Highlight color="#fac863">a cipher</Highlight>.
         </Text>
+      </Slide>
+
+      <Slide>
+        <Subtitle>Symmetric encryption</Subtitle>
       </Slide>
       <Slide>
         <Text>
-          The encypted message is often called{" "}
-          <Highlight color="#fac863">a cipher</Highlight>.
+          Example usecases are:{" "}
+          <Highlight color="#fac863">
+            file system encryption, Wi-Fi protected access (WPA), database
+            encryption
+          </Highlight>{" "}
+        </Text>
+      </Slide>
+      <Slide>
+        <Subtitle>Symmetric algorithms</Subtitle>
+        <Text>
+          <Highlight color="#fac863">
+            Direct AES, AES key wrap, AES GCM
+          </Highlight>
+        </Text>
+      </Slide>
+      <Slide>
+        <Image src={EncSym} />
+      </Slide>
+
+      <Slide>
+        <Subtitle>Asymmetric encryption</Subtitle>
+      </Slide>
+      <Slide>
+        <Text>
+          The sender asks for{" "}
+          <Highlight color="#fac863">the receiver's public key</Highlight>, and
+          uses it to <Highlight color="#fac863">encrypt the message</Highlight>.
         </Text>
       </Slide>
       <Slide>
@@ -745,23 +803,62 @@ function SlideDeck() {
         </Text>
       </Slide>
       <Slide>
-        <Image src={encrypting} alt="Schema of how encrypting works" />
+        <Image src={EncAsym} />
       </Slide>
       <Slide>
-        <Image src={decrypting} alt="Schema of how decrypting works" />
+        <Subtitle>A detailed example: RSA</Subtitle>
       </Slide>
       <Slide>
-        <Subtitle>Generate&nbsp;keys</Subtitle>
+        <Subtitle>Generating keys</Subtitle>
+      </Slide>
+      <Slide>
+        <Text>
+          Note: Cryptography is usually based on some algorithms using{" "}
+          <Highlight color="#fac863">large prime numbers</Highlight>, RSA is no
+          exception.
+        </Text>
+      </Slide>
+      <Slide note="The Least Common Multiple">
         <Image
           src={rsaKeyGeneration}
           alt="Schema of how RSA key generation works"
         />
       </Slide>
       <Slide>
+        <Subtitle>Using a public key to encrypt</Subtitle>
+      </Slide>
+      <Slide>
+        <Image
+          src={rsaEncryptionSimple}
+          alt="Schema of how RSA encryption works"
+        />
+      </Slide>
+      <Slide>
         <Image src={rsaEncryption} alt="Schema of how RSA encryption works" />
       </Slide>
       <Slide>
+        <Image
+          src={rsaEncryptionFade}
+          alt="Schema of how RSA encryption works"
+        />
+      </Slide>
+      <Slide>
+        <Subtitle>Using a private key to decrypt</Subtitle>
+      </Slide>
+      <Slide>
+        <Image
+          src={rsaDecryptionSimple}
+          alt="Schema of how RSA decryption works"
+        />
+      </Slide>
+      <Slide>
         <Image src={rsaDecryption} alt="Schema of how RSA decryption works" />
+      </Slide>
+      <Slide>
+        <Image
+          src={rsaDecryptionFade}
+          alt="Schema of how RSA decryption works"
+        />
       </Slide>
       <Slide>
         <Image src={simpleRsaDemo} alt="A screenshot of the simple RSA demo" />
@@ -770,11 +867,10 @@ function SlideDeck() {
         <Image src={rsaDemo} alt="A screenshot of the RSA demo" />
       </Slide>
       <Slide>
-        <Subtitle>Symmetric algorithms</Subtitle>
+        <Subtitle>Asymmetric encryption</Subtitle>\
         <Text>
-          <Highlight color="#fac863">
-            Direct AES, AES key wrap, AES GCM
-          </Highlight>
+          Example usecases are:{" "}
+          <Highlight color="#fac863">TLS, VPN, SSH</Highlight>{" "}
         </Text>
       </Slide>
       <Slide>
@@ -785,10 +881,7 @@ function SlideDeck() {
       </Slide>
       <Slide>
         <Text>
-          Symmetric algorithms are faster
-          <Highlight color="#fac863">
-            Symmetric algorithms are faster
-          </Highlight>{" "}
+          <Highlight color="#fac863">Symmetric algorithms are faster</Highlight>{" "}
           than asymmetric ones.
         </Text>
       </Slide>
@@ -904,30 +997,55 @@ function SlideDeck() {
               textAlign: "center"
             }}
           >
+            *
+          </Highlight>
+          Something
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Subtitle style={{ textAlign: "left" }}>
+          <Highlight
+            color="#fac863"
+            style={{
+              display: "inline-block",
+              width: "11rem",
+              textAlign: "center"
+            }}
+          >
+            J
+          </Highlight>
+          <span style={{ color: "#c0c5ce" }}>SON</span>
+          <br />
+          <Highlight
+            color="#fac863"
+            style={{
+              display: "inline-block",
+              width: "11rem",
+              textAlign: "center"
+            }}
+          >
+            W
+          </Highlight>
+          <span style={{ color: "#c0c5ce" }}>eb</span>
+          <br />
+          <Highlight
+            color="#fac863"
+            style={{
+              display: "inline-block",
+              width: "11rem",
+              textAlign: "center"
+            }}
+          >
             K
           </Highlight>
           ey
         </Subtitle>
       </Slide>
       <Slide>
-        <Code
-          code={`{
-  "keys": [
-    {
-      "alg": "RS256",
-      "kty": "RSA",
-      "use": "sig",
-      "x5c": [
-        "MIIDAzC...8JufiAw=="
-      ],
-      "n": "qJdLkrX...SE4havw",
-      "e": "AQAB",
-      "kid": "NDZDOTV...E1NDgxNg",
-      "x5t": "NDZDOTV...E1NDgxNg"
-    }
-  ]
-}`}
-        />
+        <Image src={JWK} alt="jwk" contain />
+      </Slide>
+      <Slide>
+        <Image src={JWK2} alt="jwk" contain />
       </Slide>
 
       <Slide>
@@ -981,31 +1099,67 @@ function SlideDeck() {
           }}
         >
           <span style={{ textTransform: "none" }}>
-            eyJhbGciOiJIUzI1NiJ9.eyJmb28iOiJiYXIifQ.CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
+            <Highlight
+              color="#fac863"
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem"
+              }}
+            >
+              eyJhbGciOiJIUzI1NiJ9
+            </Highlight>
+            <span
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem",
+                margin: "0 1rem"
+              }}
+            >
+              .
+            </span>
+            <Highlight
+              color="#fac863"
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem"
+              }}
+            >
+              eyJmb28iOiJiYXIifQ
+            </Highlight>
+            <span
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem",
+                margin: "0 1rem"
+              }}
+            >
+              .
+            </span>
+            <Highlight
+              color="#fac863"
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem"
+              }}
+            >
+              CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
+            </Highlight>
           </span>
         </Subtitle>
       </Slide>
-      <Slide>
-        <Subtitle
-          style={{
-            maxWidth: "80vw",
-            wordWrap: "break-word",
-            textAlign: "left"
-          }}
-        >
-          <span style={{ textTransform: "none" }}>
-            <Highlight color="#fac863">eyJhbGciOiJIUzI1NiJ9</Highlight>
-            .eyJmb28iOiJiYXIifQ.CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
-          </span>
-        </Subtitle>
-      </Slide>
+
       <Slide>
         <Subtitle>JOSE Header</Subtitle>
-        <Code
-          code={`{
-  alg: "HS256"
-}`}
-        />
       </Slide>
       <Slide>
         <Subtitle
@@ -1016,45 +1170,214 @@ function SlideDeck() {
           }}
         >
           <span style={{ textTransform: "none" }}>
-            eyJhbGciOiJIUzI1NiJ9.
-            <Highlight color="#fac863">eyJmb28iOiJiYXIifQ</Highlight>
-            .CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
-          </span>
-        </Subtitle>
-      </Slide>
-      <Slide>
-        <Subtitle>Payload</Subtitle>
-        <Code
-          code={`{
-  foo: "bar"
-}`}
-        />
-      </Slide>
-      <Slide>
-        <Subtitle
-          style={{
-            maxWidth: "80vw",
-            wordWrap: "break-word",
-            textAlign: "left"
-          }}
-        >
-          <span style={{ textTransform: "none" }}>
-            eyJhbGciOiJIUzI1NiJ9.eyJmb28iOiJiYXIifQ.
-            <Highlight color="#fac863">
+            <Highlight
+              color="#fac863"
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem"
+              }}
+            >
+              eyJhbGciOiJIUzI1NiJ9
+            </Highlight>
+            <span
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem",
+                margin: "0 1rem"
+              }}
+            >
+              .
+            </span>
+            <Highlight
+              color="rgba(250, 200, 99, 0.3)"
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem"
+              }}
+            >
+              eyJmb28iOiJiYXIifQ
+            </Highlight>
+            <span
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem",
+                margin: "0 1rem"
+              }}
+            >
+              .
+            </span>
+            <Highlight
+              color="rgba(250, 200, 99, 0.3)"
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem"
+              }}
+            >
               CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
             </Highlight>
           </span>
         </Subtitle>
       </Slide>
       <Slide>
+        <Image src={JWSHeader} alt="JWS Header" contain />
+      </Slide>
+
+      <Slide>
+        <Subtitle>Payload</Subtitle>
+      </Slide>
+      <Slide>
+        <Subtitle
+          style={{
+            maxWidth: "80vw",
+            wordWrap: "break-word",
+            textAlign: "left"
+          }}
+        >
+          <span style={{ textTransform: "none" }}>
+            <Highlight
+              color="rgba(250, 200, 99, 0.3)"
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem"
+              }}
+            >
+              eyJhbGciOiJIUzI1NiJ9
+            </Highlight>
+            <span
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem",
+                margin: "0 1rem"
+              }}
+            >
+              .
+            </span>
+            <Highlight
+              color="#fac863"
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem"
+              }}
+            >
+              eyJmb28iOiJiYXIifQ
+            </Highlight>
+            <span
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem",
+                margin: "0 1rem"
+              }}
+            >
+              .
+            </span>
+            <Highlight
+              color="rgba(250, 200, 99, 0.3)"
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem"
+              }}
+            >
+              CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
+            </Highlight>
+          </span>
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Image src={JWSPayload} alt="JWS Payload" contain />
+      </Slide>
+
+      <Slide>
         <Subtitle>Signature</Subtitle>
-        <Code
-          code={`HMACSHA256(
-  base64UrlEncode(header) + "." +
-  base64UrlEncode(payload),
-  "secret"
-)`}
-        />
+      </Slide>
+      <Slide>
+        <Subtitle
+          style={{
+            maxWidth: "80vw",
+            wordWrap: "break-word",
+            textAlign: "left"
+          }}
+        >
+          <span style={{ textTransform: "none" }}>
+            <Highlight
+              color="rgba(250, 200, 99, 0.3)"
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem"
+              }}
+            >
+              eyJhbGciOiJIUzI1NiJ9
+            </Highlight>
+            <span
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem",
+                margin: "0 1rem"
+              }}
+            >
+              .
+            </span>
+            <Highlight
+              color="rgba(250, 200, 99, 0.3)"
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem"
+              }}
+            >
+              eyJmb28iOiJiYXIifQ
+            </Highlight>
+            <span
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem",
+                margin: "0 1rem"
+              }}
+            >
+              .
+            </span>
+            <Highlight
+              color="#fac863"
+              style={{
+                border: "4px solid black",
+                borderRadius: ".5rem",
+                padding: ".5rem",
+                lineHeight: "12rem"
+              }}
+            >
+              CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
+            </Highlight>
+          </span>
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Image src={JWSSignature} alt="JWS Signature" contain />
       </Slide>
 
       <Slide note="https://medium.facilelogin.com/jwt-jws-and-jwe-for-not-so-dummies-b63310d201a3">
@@ -1100,39 +1423,65 @@ function SlideDeck() {
         <Image src={jwe} alt="JWE explanation" />
       </Slide>
       <Slide>
-        <Subtitle>JOSE Header</Subtitle>
-        <Image src={jweHeader} />
+        <Text>JWEs use 2 kind of encryption.</Text>
       </Slide>
       <Slide>
-        <Subtitle>Decrypt the Content Encryption Key</Subtitle>
+        <Text>
+          The <Highlight color="#fac863">content encryption key</Highlight> is
+          usually encrypted with an{" "}
+          <Highlight color="#fac863">asymetrical algorithm</Highlight>.
+        </Text>
+      </Slide>
+      <Slide>
+        <Image src={JWEKeyExpl1} alt="JWEKeyExpl1 explanation" />
+      </Slide>
+      <Slide>
+        <Text>
+          <Highlight color="#fac863">The content</Highlight> is encrypted using
+          a{" "}
+          <Highlight color="#fac863">
+            symetrical content encryption key (CEK)
+          </Highlight>
+          .
+        </Text>
+      </Slide>
+      <Slide>
+        <Image src={JWEKeyExpl2} alt="JWE explanation" />
+      </Slide>
+      <Slide>
+        <Subtitle>JOSE Header</Subtitle>
+      </Slide>
+      <Slide>
+        <Image src={jweHeader} contain />
+      </Slide>
+      <Slide>
+        <Subtitle>Decrypt the Content Encryption Key (CEK)</Subtitle>
+      </Slide>
+      <Slide>
         <Image src={jweEncKey1} />
       </Slide>
       <Slide>
-        <Subtitle>Decrypt the Content Encryption Key</Subtitle>
         <Image src={jweEncKey2} />
       </Slide>
       <Slide>
-        <Subtitle>Decrypt the Content Encryption Key</Subtitle>
         <Image src={jweEncKey3} />
       </Slide>
       <Slide>
-        <Subtitle>Decrypt the JWE</Subtitle>
+        <Subtitle>Decrypt the cipher</Subtitle>
+      </Slide>
+      <Slide>
         <Image src={jweDecrypt1} />
       </Slide>
       <Slide>
-        <Subtitle>Decrypt the JWE</Subtitle>
         <Image src={jweDecrypt2} />
       </Slide>
       <Slide>
-        <Subtitle>Decrypt the JWE</Subtitle>
         <Image src={jweDecrypt3} />
       </Slide>
       <Slide>
-        <Subtitle>Decrypt the JWE</Subtitle>
         <Image src={jweDecrypt4} />
       </Slide>
       <Slide>
-        <Subtitle>Decrypt the JWE</Subtitle>
         <Image src={jweDecrypt5} />
       </Slide>
 
@@ -1197,44 +1546,21 @@ function SlideDeck() {
       </Slide>
       <Slide>
         <Subtitle>JWT Header</Subtitle>
-        <Code
-          code={`{
-  "alg": "HS256",
-  "typ": "JWT"
-}`}
-        />
+      </Slide>
+      <Slide>
+        <Image src={JWTHeader} contain />
       </Slide>
       <Slide>
         <Subtitle>Access Token</Subtitle>
-        <Code
-          code={`{
-  "iss": "https://sambego.eu.auth0.com/",
-  "sub": "auth0|5b10...ae62",
-  "aud": [
-    "my-audience",
-  ],
-  "iat": 1554361012,
-  "exp": 1554368212,
-  "azp": "gkWZ...Nx9y",
-  "scope": "openid profile"
-}`}
-        />
+      </Slide>
+      <Slide>
+        <Image src={JWTAccess} contain />
       </Slide>
       <Slide>
         <Subtitle>ID Token</Subtitle>
-        <Code
-          code={`{
-  "nickname": "sambellen",
-  "name": "sambellen@gmail.com",
-  "picture": "https://s.gravatar.com/avatar/...avatars.png",
-  "updated_at": "2019-04-04T06:56:52.907Z",
-  "iss": "https://sambego.eu.auth0.com/",
-  "sub": "auth0|5b10....ae62",
-  "aud": "gkWZ...kNx9y",
-  "iat": 1554361012,
-  "exp": 1554397012,
-}`}
-        />
+      </Slide>
+      <Slide>
+        <Image src={JWTId} contain />
       </Slide>
       {/* -- End JOSE -- */}
 

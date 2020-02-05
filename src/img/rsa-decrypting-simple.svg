@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="898px" height="306px" viewBox="0 0 898 306" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>rsa-decrypting-simple</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RSA-Decrypting-simple">
+            <g id="encryption-alg" transform="translate(332.000000, 4.000000)">
+                <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="0" y="0" width="143" height="104" rx="10"></rect>
+                <text id="Public-Key" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                    <tspan x="29.98" y="25">Decrypt</tspan>
+                </text>
+                <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="0" y="32" width="230" height="260" rx="10"></rect>
+                <text id="c-(mod-n)" font-family="Monaco" font-size="35" font-weight="normal" fill="#000000">
+                    <tspan x="20.4846191" y="170">c (mod n)</tspan>
+                </text>
+                <text id="413" font-family="Monaco" font-size="13" font-weight="normal" fill="#000000">
+                    <tspan x="68.2980957" y="189">413</tspan>
+                </text>
+                <text id="d" font-family="Monaco" font-size="35" font-weight="normal" fill="#000000">
+                    <tspan x="38.998291" y="155">d</tspan>
+                </text>
+                <text id="2183-(mod-3233)" font-family="Monaco" font-size="17" font-weight="normal" fill="#000000">
+                    <tspan x="28.2858887" y="201">2183   (mod 3233)</tspan>
+                </text>
+            </g>
+            <g id="Public-key" transform="translate(2.000000, 160.000000)">
+                <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="0" y="0" width="143" height="104" rx="10"></rect>
+                <text id="Public-Key" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                    <tspan x="12.03" y="25">Private Key</tspan>
+                </text>
+                <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="0" y="33" width="230" height="104" rx="10"></rect>
+                <text id="n:-3233-d:-413" font-family="Monaco" font-size="35" font-weight="normal" fill="#000000">
+                    <tspan x="15" y="77">n: 3233</tspan>
+                    <tspan x="15" y="121">d: 413</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="2" y="36" width="230" height="104" rx="10"></rect>
+            <text id="2183" font-family="Monaco" font-size="40" font-weight="normal" fill="#000000">
+                <tspan x="69.4921875" y="103">2183</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="662" y="117" width="230" height="104" rx="10"></rect>
+            <text id="1234" font-family="Monaco" font-size="40" font-weight="normal" fill="#000000">
+                <tspan x="724.492188" y="184">1234</tspan>
+            </text>
+            <path id="Line" d="M579,150 L579,160 L623,160 L623,150 L647,162 L623,174 L623,164 L579,164 L579,174 L575,174 L575,150 L579,150 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M249,77 L249,87 L293,87 L293,77 L317,89 L293,101 L293,91 L249,91 L249,101 L245,101 L245,77 L249,77 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M249,232 L249,242 L293,242 L293,232 L317,244 L293,256 L293,246 L249,246 L249,256 L245,256 L245,232 L249,232 Z" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1772px" height="463px" viewBox="0 0 1772 463" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>jwe-enc-expl</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="JWE">
+            <path d="M243,263 L538,263 C543.522847,263 548,267.477153 548,273 L548,300 L548,300 L233,300 L233,273 C233,267.477153 237.477153,263 243,263 Z" id="Rectangle" stroke="#000000" stroke-width="4" fill="#F2D393"></path>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#F2D393" x="233" y="296" width="354" height="156" rx="10"></rect>
+            <text id="Encrypted-with-RSA-O" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="251.02" y="287">Encrypted with RSA-OAEP</tspan>
+            </text>
+            <path d="M1045,263 L1340,263 C1345.52285,263 1350,267.477153 1350,273 L1350,300 L1350,300 L1035,300 L1035,273 C1035,267.477153 1039.47715,263 1045,263 Z" id="Rectangle" stroke="#000000" stroke-width="4" fill="#F2D393" opacity="0.3"></path>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#F2D393" opacity="0.3" x="1035" y="296" width="354" height="156" rx="10"></rect>
+            <text id="Encrypted-with-A256G" opacity="0.3" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="1057.93" y="287">Encrypted with A256GCM</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" opacity="0.3" x="9" y="313" width="154" height="114" rx="10"></rect>
+            <text id="BASE64(-Header-)" opacity="0.3" font-family="Montserrat-Bold, Montserrat" font-size="25" font-weight="bold" fill="#000000">
+                <tspan x="25" y="350">BASE64(</tspan>
+                <tspan x="25" y="380">  Header</tspan>
+                <tspan x="25" y="410">)</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="256" y="313" width="308" height="114" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" opacity="0.3" x="173" y="313" width="50" height="114" rx="10"></rect>
+            <text id="BASE64(-JWE-Encrypte" font-family="Montserrat-Bold, Montserrat" font-size="25" font-weight="bold" fill="#000000">
+                <tspan x="274" y="351">BASE64(</tspan>
+                <tspan x="274" y="381">  JWE Encrypted key</tspan>
+                <tspan x="274" y="411">)</tspan>
+            </text>
+            <text id="." opacity="0.3" font-family="Montserrat-Bold, Montserrat" font-size="50" font-weight="bold" fill="#000000">
+                <tspan x="191.45" y="375">.</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" opacity="0.3" x="657" y="313" width="308" height="114" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" opacity="0.3" x="597" y="313" width="50" height="114" rx="10"></rect>
+            <text id="BASE64(-Initializati" opacity="0.3" font-family="Montserrat-Bold, Montserrat" font-size="25" font-weight="bold" fill="#000000">
+                <tspan x="673" y="350">BASE64(</tspan>
+                <tspan x="673" y="380">  Initialization Vector</tspan>
+                <tspan x="673" y="410">)</tspan>
+            </text>
+            <text id="." opacity="0.3" font-family="Montserrat-Bold, Montserrat" font-size="50" font-weight="bold" fill="#000000">
+                <tspan x="615.45" y="375">.</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" opacity="0.3" x="1116" y="313" width="192" height="114" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" opacity="0.3" x="975" y="313" width="50" height="114" rx="10"></rect>
+            <text id="BASE64(-Cipher-text" opacity="0.3" font-family="Montserrat-Bold, Montserrat" font-size="25" font-weight="bold" fill="#000000">
+                <tspan x="1132" y="350">BASE64(</tspan>
+                <tspan x="1132" y="380">  Cipher text</tspan>
+                <tspan x="1132" y="410">)</tspan>
+            </text>
+            <text id="." opacity="0.3" font-family="Montserrat-Bold, Montserrat" font-size="50" font-weight="bold" fill="#000000">
+                <tspan x="993.45" y="375">.</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" opacity="0.3" x="1459" y="313" width="308" height="114" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" opacity="0.3" x="1399" y="313" width="50" height="114" rx="10"></rect>
+            <text id="BASE64(-Authenticati" opacity="0.3" font-family="Montserrat-Bold, Montserrat" font-size="25" font-weight="bold" fill="#000000">
+                <tspan x="1475" y="350">BASE64(</tspan>
+                <tspan x="1475" y="380">  Authentication Tag</tspan>
+                <tspan x="1475" y="410">)</tspan>
+            </text>
+            <text id="." opacity="0.3" font-family="Montserrat-Bold, Montserrat" font-size="50" font-weight="bold" fill="#000000">
+                <tspan x="1417.45" y="375">.</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

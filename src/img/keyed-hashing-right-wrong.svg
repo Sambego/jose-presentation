@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="894px" height="740px" viewBox="0 0 894 740" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>keyed-hashing-right-wrong</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Keyed-hashing-wrong-key">
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="332" y="152" width="230" height="436" rx="10"></rect>
+            <text id="Keyed-Hashing-Algori" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="389.89" y="327">Keyed</tspan>
+                <tspan x="371.5675" y="370">Hashing</tspan>
+                <tspan x="354.2425" y="413">Algorithm</tspan>
+                <tspan x="367.39" y="456" font-size="20">(HMACSHA256)</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#EC5F67" x="333" y="634" width="230" height="104" rx="10"></rect>
+            <text id="(wrong-secret)" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="370.85" y="715">(wrong-secret)</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#EC5F67" x="662" y="432" width="230" height="104" rx="10"></rect>
+            <text id="be5d613f0c8902cf-160" font-family="Monaco" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="686" y="456">be5d613f0c8902cf</tspan>
+                <tspan x="686" y="479">1603e6a7117dea20</tspan>
+                <tspan x="686" y="502">0c8370e786c618c6</tspan>
+                <tspan x="686" y="525">4ee18a071c4e8536</tspan>
+            </text>
+            <path id="Line" d="M579,479 L579,489 L624,489 L624,479 L648,491 L624,503 L624,493 L579,493 L579,503 L575,503 L575,479 L579,479 Z" fill="#000000" fill-rule="nonzero"></path>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="2" y="318" width="230" height="104" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#99C794" x="662" y="204" width="230" height="104" rx="10"></rect>
+            <text id="The-quick-brown-fox" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="29.11" y="353">The quick brown </tspan>
+                <tspan x="39.68" y="377">fox jumps over </tspan>
+                <tspan x="53.21" y="401">the lazy dog</tspan>
+            </text>
+            <text id="ab229d8abb323f00-02b" font-family="Monaco" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="686" y="228">ab229d8abb323f00</tspan>
+                <tspan x="686" y="251">02b8b9bd3c0d8f69</tspan>
+                <tspan x="686" y="274">59f087be95d1b940</tspan>
+                <tspan x="686" y="297">dfb5b3819d7148b8</tspan>
+            </text>
+            <path id="Line" d="M249,365 L249,375 L293,375 L293,365 L317,377 L293,389 L293,379 L249,379 L249,389 L245,389 L245,365 L249,365 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M579,251 L579,261 L624,261 L624,251 L648,263 L624,275 L624,265 L579,265 L579,275 L575,275 L575,251 L579,251 Z" fill="#000000" fill-rule="nonzero"></path>
+            <text id="Secret" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="389.2525" y="687">Secret</tspan>
+            </text>
+            <path id="Line-2" d="M448,554 L460,578 L450,578 L450,636 L446,636 L446,578 L436,578 L448,554 Z" fill="#000000" fill-rule="nonzero"></path>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#99C794" x="333" y="2" width="230" height="104" rx="10"></rect>
+            <text id="(super-secret)" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="375.29" y="83">(super-secret)</tspan>
+            </text>
+            <text id="Secret" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="389.2525" y="54">Secret</tspan>
+            </text>
+            <path id="Line-2" d="M450,104 L450,162 L460,162 L448,186 L436,162 L446,162 L446,104 L450,104 Z" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
