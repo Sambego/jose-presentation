@@ -11,7 +11,7 @@ import {
   Highlight,
   Video,
   Footer,
-  Code
+  Code,
 } from "@sambego/diorama";
 
 import Speedy from "./video/speedy.mp4";
@@ -64,9 +64,15 @@ import EncAsym from "./img/asym-enc.svg";
 import JWSJSON from "./img/jws-json.svg";
 import JWEJSON from "./img/jwe-json.svg";
 
+import Auth0Login from "./img/Auth0-login.png";
+import Auth0AmbassadorProgram from "./img/Auth0-ambassador-program.png";
+import Auth0GuestAuthorProgram from "./img/Auth0-guest-author-program.png";
+import AvocadoLabs from "./img/Avocado labs.png";
+
 function SlideDeck() {
   return (
     <Deck
+      presenterNotes
       footer={
         <Footer
           left={<Highlight color="#fac863">@sambego</Highlight>}
@@ -94,7 +100,7 @@ function SlideDeck() {
             bottom: "2rem",
             left: "2rem",
             width: "10%",
-            zIndex: 2
+            zIndex: 2,
           }}
           alt="Creative commons"
         />
@@ -124,6 +130,58 @@ function SlideDeck() {
         </Text>
       </Slide>
       <Slide>
+        <Image src={Auth0Login} alt="Auth0 login" contain />
+      </Slide>
+      <Slide>
+        <Image
+          src={Auth0AmbassadorProgram}
+          alt="Auth0 Ambassador Program"
+          contain
+        />
+      </Slide>
+      <Slide>
+        <Image
+          src={Auth0GuestAuthorProgram}
+          alt="Auth0 Guest Author Program"
+          contain
+        />
+      </Slide>
+      <Slide>
+        <Image src={AvocadoLabs} alt="Avocado Labs" contain />
+      </Slide>
+      <Slide>
+        <Subtitle
+          style={{
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            transform: "translate3d(-50%, -50%, 0)",
+            color: "#31b96e",
+            margin: 0,
+          }}
+        >
+          @Avocado_Labs
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Subtitle
+          style={{
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            transform: "translate3d(-50%, -50%, 0)",
+            color: "#000",
+            margin: 0,
+            fontSize: "6rem",
+          }}
+        >
+          https://auth0.com/events
+          <span style={{ color: "#31b96e" }}>
+            /avocado-labs-talks-episode-1/
+          </span>
+        </Subtitle>
+      </Slide>
+      <Slide>
         <Image
           src={Poes}
           alt="I've got cat stickers, tweet me @sambego"
@@ -137,7 +195,7 @@ function SlideDeck() {
             top: "50%",
             transform: "translate3d(-50%, -50%, 0)",
             color: "#fff",
-            margin: 0
+            margin: 0,
           }}
         >
           Tweet me @sambego
@@ -251,7 +309,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             &nbsp;
@@ -264,7 +322,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             H
@@ -277,7 +335,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             M
@@ -290,7 +348,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             A
@@ -303,7 +361,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             C
@@ -316,7 +374,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             S
@@ -329,7 +387,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             H
@@ -342,7 +400,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             A
@@ -355,7 +413,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             <span style={{ fontSize: "4rem", verticalAlign: "middle" }}>
@@ -373,7 +431,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             &nbsp;
@@ -386,7 +444,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             H
@@ -399,7 +457,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             M
@@ -412,7 +470,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             A
@@ -425,7 +483,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             C
@@ -438,7 +496,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             S
@@ -451,7 +509,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             H
@@ -464,7 +522,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             A
@@ -477,7 +535,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             <span style={{ fontSize: "4rem", verticalAlign: "middle" }}>
@@ -495,7 +553,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             &nbsp;
@@ -508,7 +566,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             H
@@ -521,7 +579,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             M
@@ -534,7 +592,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             A
@@ -547,7 +605,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             C
@@ -560,7 +618,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             S
@@ -573,7 +631,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             H
@@ -586,7 +644,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             A
@@ -599,7 +657,7 @@ function SlideDeck() {
               display: "inline-block",
               width: "11rem",
               textAlign: "center",
-              marginRight: "10px"
+              marginRight: "10px",
             }}
           >
             <span style={{ fontSize: "4rem", verticalAlign: "middle" }}>
@@ -820,6 +878,60 @@ function SlideDeck() {
           exception.
         </Text>
       </Slide>
+      <Slide>
+        <Subtitle>Is a million a large number?</Subtitle>
+        <Text style={{ fontSize: "8rem", fontFamily: "monospace" }}>
+          1.000.000
+        </Text>
+      </Slide>
+      <Slide>
+        <Subtitle>Is a billion a large number?</Subtitle>
+        <Text style={{ fontSize: "8rem", fontFamily: "monospace" }}>
+          1.000.000.000
+        </Text>
+      </Slide>
+      <Slide>
+        <Text
+          style={{
+            maxWidth: "80vw",
+            wordBreak: "break-all",
+            fontSize: "8rem",
+            fontFamily: "monospace",
+          }}
+        >
+          12977431783174311477715168088033263056409713689016918381068966825230649007458558447797159066437571044576098261599777315303876569591523397177150786901260953
+        </Text>
+      </Slide>
+      <Slide>
+        <Text
+          style={{
+            maxWidth: "80vw",
+            wordBreak: "break-all",
+            fontSize: "8rem",
+            fontFamily: "monospace",
+          }}
+        >
+          <Highlight color="#fac863" style={{ padding: 0 }}>
+            1297743
+          </Highlight>
+          1783174311477715168088033263056409713689016918381068966825230649007458558447797159066437571044576098261599777315303876569591523397177150786901260953
+        </Text>
+      </Slide>
+      <Slide>
+        <Text
+          style={{
+            maxWidth: "80vw",
+            wordBreak: "break-all",
+            fontSize: "8rem",
+            fontFamily: "monospace",
+          }}
+        >
+          <Highlight color="#fac863" style={{ padding: 0 }}>
+            1297743178
+          </Highlight>
+          3174311477715168088033263056409713689016918381068966825230649007458558447797159066437571044576098261599777315303876569591523397177150786901260953
+        </Text>
+      </Slide>
       <Slide notes="The Least Common Multiple">
         <Image
           src={rsaKeyGeneration}
@@ -900,7 +1012,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "8rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             J
@@ -912,7 +1024,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "8rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             O
@@ -924,7 +1036,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "8rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             S
@@ -936,7 +1048,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "8rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             E
@@ -972,7 +1084,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             J
@@ -984,7 +1096,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             W
@@ -996,7 +1108,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             *
@@ -1011,7 +1123,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             J
@@ -1023,7 +1135,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             W
@@ -1035,7 +1147,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             K
@@ -1057,7 +1169,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             J
@@ -1069,7 +1181,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             W
@@ -1081,7 +1193,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             S
@@ -1097,7 +1209,7 @@ function SlideDeck() {
           style={{
             maxWidth: "80vw",
             wordWrap: "break-word",
-            textAlign: "left"
+            textAlign: "left",
           }}
         >
           <span style={{ textTransform: "none" }}>
@@ -1107,7 +1219,7 @@ function SlideDeck() {
                 border: "4px solid black",
                 borderRadius: ".5rem",
                 padding: ".5rem",
-                lineHeight: "12rem"
+                lineHeight: "12rem",
               }}
             >
               eyJhbGciOiJIUzI1NiJ9
@@ -1118,7 +1230,7 @@ function SlideDeck() {
                 borderRadius: ".5rem",
                 padding: ".5rem",
                 lineHeight: "12rem",
-                margin: "0 1rem"
+                margin: "0 1rem",
               }}
             >
               .
@@ -1129,7 +1241,7 @@ function SlideDeck() {
                 border: "4px solid black",
                 borderRadius: ".5rem",
                 padding: ".5rem",
-                lineHeight: "12rem"
+                lineHeight: "12rem",
               }}
             >
               eyJmb28iOiJiYXIifQ
@@ -1140,7 +1252,7 @@ function SlideDeck() {
                 borderRadius: ".5rem",
                 padding: ".5rem",
                 lineHeight: "12rem",
-                margin: "0 1rem"
+                margin: "0 1rem",
               }}
             >
               .
@@ -1151,7 +1263,7 @@ function SlideDeck() {
                 border: "4px solid black",
                 borderRadius: ".5rem",
                 padding: ".5rem",
-                lineHeight: "12rem"
+                lineHeight: "12rem",
               }}
             >
               CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
@@ -1168,7 +1280,7 @@ function SlideDeck() {
           style={{
             maxWidth: "80vw",
             wordWrap: "break-word",
-            textAlign: "left"
+            textAlign: "left",
           }}
         >
           <span style={{ textTransform: "none" }}>
@@ -1178,7 +1290,7 @@ function SlideDeck() {
                 border: "4px solid black",
                 borderRadius: ".5rem",
                 padding: ".5rem",
-                lineHeight: "12rem"
+                lineHeight: "12rem",
               }}
             >
               eyJhbGciOiJIUzI1NiJ9
@@ -1189,7 +1301,7 @@ function SlideDeck() {
                 borderRadius: ".5rem",
                 padding: ".5rem",
                 lineHeight: "12rem",
-                margin: "0 1rem"
+                margin: "0 1rem",
               }}
             >
               .
@@ -1200,7 +1312,7 @@ function SlideDeck() {
                 border: "4px solid black",
                 borderRadius: ".5rem",
                 padding: ".5rem",
-                lineHeight: "12rem"
+                lineHeight: "12rem",
               }}
             >
               eyJmb28iOiJiYXIifQ
@@ -1211,7 +1323,7 @@ function SlideDeck() {
                 borderRadius: ".5rem",
                 padding: ".5rem",
                 lineHeight: "12rem",
-                margin: "0 1rem"
+                margin: "0 1rem",
               }}
             >
               .
@@ -1222,7 +1334,7 @@ function SlideDeck() {
                 border: "4px solid black",
                 borderRadius: ".5rem",
                 padding: ".5rem",
-                lineHeight: "12rem"
+                lineHeight: "12rem",
               }}
             >
               CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
@@ -1242,7 +1354,7 @@ function SlideDeck() {
           style={{
             maxWidth: "80vw",
             wordWrap: "break-word",
-            textAlign: "left"
+            textAlign: "left",
           }}
         >
           <span style={{ textTransform: "none" }}>
@@ -1252,7 +1364,7 @@ function SlideDeck() {
                 border: "4px solid black",
                 borderRadius: ".5rem",
                 padding: ".5rem",
-                lineHeight: "12rem"
+                lineHeight: "12rem",
               }}
             >
               eyJhbGciOiJIUzI1NiJ9
@@ -1263,7 +1375,7 @@ function SlideDeck() {
                 borderRadius: ".5rem",
                 padding: ".5rem",
                 lineHeight: "12rem",
-                margin: "0 1rem"
+                margin: "0 1rem",
               }}
             >
               .
@@ -1274,7 +1386,7 @@ function SlideDeck() {
                 border: "4px solid black",
                 borderRadius: ".5rem",
                 padding: ".5rem",
-                lineHeight: "12rem"
+                lineHeight: "12rem",
               }}
             >
               eyJmb28iOiJiYXIifQ
@@ -1285,7 +1397,7 @@ function SlideDeck() {
                 borderRadius: ".5rem",
                 padding: ".5rem",
                 lineHeight: "12rem",
-                margin: "0 1rem"
+                margin: "0 1rem",
               }}
             >
               .
@@ -1296,7 +1408,7 @@ function SlideDeck() {
                 border: "4px solid black",
                 borderRadius: ".5rem",
                 padding: ".5rem",
-                lineHeight: "12rem"
+                lineHeight: "12rem",
               }}
             >
               CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
@@ -1316,7 +1428,7 @@ function SlideDeck() {
           style={{
             maxWidth: "80vw",
             wordWrap: "break-word",
-            textAlign: "left"
+            textAlign: "left",
           }}
         >
           <span style={{ textTransform: "none" }}>
@@ -1326,7 +1438,7 @@ function SlideDeck() {
                 border: "4px solid black",
                 borderRadius: ".5rem",
                 padding: ".5rem",
-                lineHeight: "12rem"
+                lineHeight: "12rem",
               }}
             >
               eyJhbGciOiJIUzI1NiJ9
@@ -1337,7 +1449,7 @@ function SlideDeck() {
                 borderRadius: ".5rem",
                 padding: ".5rem",
                 lineHeight: "12rem",
-                margin: "0 1rem"
+                margin: "0 1rem",
               }}
             >
               .
@@ -1348,7 +1460,7 @@ function SlideDeck() {
                 border: "4px solid black",
                 borderRadius: ".5rem",
                 padding: ".5rem",
-                lineHeight: "12rem"
+                lineHeight: "12rem",
               }}
             >
               eyJmb28iOiJiYXIifQ
@@ -1359,7 +1471,7 @@ function SlideDeck() {
                 borderRadius: ".5rem",
                 padding: ".5rem",
                 lineHeight: "12rem",
-                margin: "0 1rem"
+                margin: "0 1rem",
               }}
             >
               .
@@ -1370,7 +1482,7 @@ function SlideDeck() {
                 border: "4px solid black",
                 borderRadius: ".5rem",
                 padding: ".5rem",
-                lineHeight: "12rem"
+                lineHeight: "12rem",
               }}
             >
               CF6Vx76CKtqGBm6AWFceoYUr038Lk3tu-1yPgvQN3-0
@@ -1389,7 +1501,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             J
@@ -1401,7 +1513,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             W
@@ -1413,7 +1525,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             E
@@ -1507,7 +1619,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             J
@@ -1519,7 +1631,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             W
@@ -1531,7 +1643,7 @@ function SlideDeck() {
             style={{
               display: "inline-block",
               width: "11rem",
-              textAlign: "center"
+              textAlign: "center",
             }}
           >
             T
@@ -1642,7 +1754,7 @@ function SlideDeck() {
             left: "50%",
             transform: "translate3d(-50%, 2px, 0)",
             width: "20vw",
-            zIndex: 0
+            zIndex: 0,
           }}
         />
       </Slide>
