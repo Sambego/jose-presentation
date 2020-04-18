@@ -72,7 +72,6 @@ import AvocadoLabs from "./img/Avocado labs.png";
 function SlideDeck() {
   return (
     <Deck
-      presenterNotes
       footer={
         <Footer
           left={<Highlight color="#fac863">@sambego</Highlight>}
