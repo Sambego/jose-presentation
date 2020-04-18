@@ -140,11 +140,41 @@ function SlideDeck() {
         />
       </Slide>
       <Slide>
+        <Subtitle
+          style={{
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            transform: "translate3d(-50%, -50%, 0)",
+            color: "#000",
+            margin: 0,
+            fontSize: "6rem",
+          }}
+        >
+          auth0.com/ambassador-program
+        </Subtitle>
+      </Slide>
+      <Slide>
         <Image
           src={Auth0GuestAuthorProgram}
           alt="Auth0 Guest Author Program"
           contain
         />
+      </Slide>
+      <Slide>
+        <Subtitle
+          style={{
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            transform: "translate3d(-50%, -50%, 0)",
+            color: "#000",
+            margin: 0,
+            fontSize: "6rem",
+          }}
+        >
+          auth0.com/guest-authors
+        </Subtitle>
       </Slide>
       <Slide>
         <Image src={AvocadoLabs} alt="Avocado Labs" contain />
@@ -175,13 +205,13 @@ function SlideDeck() {
             fontSize: "6rem",
           }}
         >
-          https://auth0.com/events
+          auth0.com/events
           <span style={{ color: "#31b96e" }}>
             /avocado-labs-talks-episode-1/
           </span>
         </Subtitle>
       </Slide>
-      <Slide>
+      {/* <Slide>
         <Image
           src={Poes}
           alt="I've got cat stickers, tweet me @sambego"
@@ -200,7 +230,7 @@ function SlideDeck() {
         >
           Tweet me @sambego
         </Subtitle>
-      </Slide>
+      </Slide> */}
       <Slide>
         <Text>
           <strong>Disclaimer</strong>: I might{" "}
