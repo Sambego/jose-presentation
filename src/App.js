@@ -74,7 +74,6 @@ import AvocadoLabs from "./img/Avocado labs.png";
 function SlideDeck() {
   return (
     <Deck
-      presenterNotes
       footer={
         <Footer
           left={<Highlight color="#fac863">@sambego</Highlight>}
@@ -88,7 +87,6 @@ function SlideDeck() {
           loop
           autoplay
           full
-          color="#fac863"
           color="#fac863"
           style={{ overflow: "hidden", zIndex: 1 }}
         />
