@@ -11,7 +11,6 @@ import {
   Highlight,
   Video,
   Footer,
-  Code,
 } from "@sambego/diorama";
 
 import Speedy from "./video/speedy.mp4";
@@ -19,7 +18,7 @@ import NPM from "./video/npm.mp4";
 
 import cc from "./img/cc.svg";
 import Sam from "./img/sam.png";
-import Poes from "./img/poes.jpg";
+// import Poes from "./img/poes.jpg";
 import hashing from "./img/hashing.svg";
 import keyedHashing from "./img/keyed-hashing.svg";
 import keyedHashingRightWrong from "./img/keyed-hashing-right-wrong.svg";
@@ -28,8 +27,8 @@ import signingUnhashed from "./img/signing-unhashed.svg";
 import signing from "./img/signing.svg";
 import verifyingUnhashed from "./img/verifying-unhashed.svg";
 import verifying from "./img/verifying.svg";
-import encrypting from "./img/encrypting.svg";
-import decrypting from "./img/decrypting.svg";
+// import encrypting from "./img/encrypting.svg";
+// import decrypting from "./img/decrypting.svg";
 import rsaKeyGeneration from "./img/rsa-key-generation.svg";
 import rsaEncryption from "./img/rsa-encrypting.svg";
 import rsaEncryptionSimple from "./img/rsa-encrypting-simple.svg";
@@ -65,11 +64,6 @@ import EncSym from "./img/sym-enc.svg";
 import EncAsym from "./img/asym-enc.svg";
 import JWSJSON from "./img/jws-json.svg";
 import JWEJSON from "./img/jwe-json.svg";
-
-import Auth0Login from "./img/Auth0-login.png";
-import Auth0AmbassadorProgram from "./img/Auth0-ambassador-program.png";
-import Auth0GuestAuthorProgram from "./img/Auth0-guest-author-program.png";
-import AvocadoLabs from "./img/Avocado labs.png";
 
 function SlideDeck() {
   return (
@@ -722,11 +716,36 @@ function SlideDeck() {
       <Slide>
         <Subtitle>RSA keys</Subtitle>
         <List>
-          <li>👍 Fast verification</li>
-          <li>👍 CPU friendly</li>
-          <li>👍 Good support (RS256)</li>
-          <li>👎 Longer keys (minimum 2056 bit is recommended)</li>
-          <li>👎 Longer signatures</li>
+          <li>
+            <span role="img" aria-label="thumbs up">
+              👍
+            </span>{" "}
+            Fast verification
+          </li>
+          <li>
+            <span role="img" aria-label="thumbs up">
+              👍
+            </span>{" "}
+            CPU friendly
+          </li>
+          <li>
+            <span role="img" aria-label="thumbs up">
+              👍
+            </span>{" "}
+            Good support (RS256)
+          </li>
+          <li>
+            <span role="img" aria-label="thumbs down">
+              👎
+            </span>{" "}
+            Longer keys (minimum 2056 bit is recommended)
+          </li>
+          <li>
+            <span role="img" aria-label="thumbs down">
+              👎
+            </span>{" "}
+            Longer signatures
+          </li>
         </List>
       </Slide>
       <Slide>
@@ -738,9 +757,24 @@ function SlideDeck() {
       <Slide>
         <Subtitle>Elliptic curve keys</Subtitle>
         <List>
-          <li>👍 Shorter keys (of equivalent to RSA strength)</li>
-          <li>👍 Shorter signatures</li>
-          <li>👎 Slower verification</li>
+          <li>
+            <span role="img" aria-label="thumbs up">
+              👍
+            </span>{" "}
+            Shorter keys (of equivalent to RSA strength)
+          </li>
+          <li>
+            <span role="img" aria-label="thumbs up">
+              👍
+            </span>{" "}
+            Shorter signatures
+          </li>
+          <li>
+            <span role="img" aria-label="thumbs down">
+              👎
+            </span>{" "}
+            Slower verification
+          </li>
         </List>
       </Slide>
       <Slide>
@@ -752,8 +786,18 @@ function SlideDeck() {
       <Slide>
         <Subtitle>Edwards-Curve Octet Keys</Subtitle>
         <List>
-          <li>👍 Best signing performance</li>
-          <li>👎 Relatively new, not the best library support</li>
+          <li>
+            <span role="img" aria-label="thumbs up">
+              👍
+            </span>{" "}
+            Best signing performance
+          </li>
+          <li>
+            <span role="img" aria-label="thumbs down">
+              👎
+            </span>{" "}
+            Relatively new, not the best library support
+          </li>
         </List>
       </Slide>
       {/* -- End Signing -- */}
