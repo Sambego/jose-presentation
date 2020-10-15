@@ -24,7 +24,9 @@ import hashing from "./img/hashing.svg";
 import keyedHashing from "./img/keyed-hashing.svg";
 import keyedHashingRightWrong from "./img/keyed-hashing-right-wrong.svg";
 import keyedHashingDetail from "./img/keyed-hashing-detail.svg";
+import signingUnhashed from "./img/signing-unhashed.svg";
 import signing from "./img/signing.svg";
+import verifyingUnhashed from "./img/verifying-unhashed.svg";
 import verifying from "./img/verifying.svg";
 import encrypting from "./img/encrypting.svg";
 import decrypting from "./img/decrypting.svg";
@@ -72,6 +74,7 @@ import AvocadoLabs from "./img/Avocado labs.png";
 function SlideDeck() {
   return (
     <Deck
+      presenterNotes
       footer={
         <Footer
           left={<Highlight color="#fac863">@sambego</Highlight>}
@@ -114,9 +117,6 @@ function SlideDeck() {
             <List>
               <li>Developer Advocate Engineer</li>
               <li>Auth0</li>
-              <li>Google Developer Expert</li>
-              <li>Fronteers</li>
-              <li>I&S London</li>
               <li>@sambego</li>
             </List>
           </div>
@@ -127,88 +127,6 @@ function SlideDeck() {
         <Text>
           <span style={{ fontFamily: "monospace" }}>npx @sambego/about-me</span>
         </Text>
-      </Slide>
-      <Slide>
-        <Image src={Auth0Login} alt="Auth0 login" contain />
-      </Slide>
-      <Slide>
-        <Image
-          src={Auth0AmbassadorProgram}
-          alt="Auth0 Ambassador Program"
-          contain
-        />
-      </Slide>
-      <Slide>
-        <Subtitle
-          style={{
-            position: "absolute",
-            left: "50%",
-            top: "50%",
-            transform: "translate3d(-50%, -50%, 0)",
-            color: "#000",
-            margin: 0,
-            fontSize: "6rem",
-          }}
-        >
-          auth0.com/ambassador-program
-        </Subtitle>
-      </Slide>
-      <Slide>
-        <Image
-          src={Auth0GuestAuthorProgram}
-          alt="Auth0 Guest Author Program"
-          contain
-        />
-      </Slide>
-      <Slide>
-        <Subtitle
-          style={{
-            position: "absolute",
-            left: "50%",
-            top: "50%",
-            transform: "translate3d(-50%, -50%, 0)",
-            color: "#000",
-            margin: 0,
-            fontSize: "6rem",
-          }}
-        >
-          auth0.com/guest-authors
-        </Subtitle>
-      </Slide>
-      <Slide>
-        <Image src={AvocadoLabs} alt="Avocado Labs" contain />
-      </Slide>
-      <Slide>
-        <Subtitle
-          style={{
-            position: "absolute",
-            left: "50%",
-            top: "50%",
-            transform: "translate3d(-50%, -50%, 0)",
-            color: "#31b96e",
-            margin: 0,
-          }}
-        >
-          @Avocado_Labs
-        </Subtitle>
-      </Slide>
-      <Slide>
-        <Subtitle
-          style={{
-            position: "absolute",
-            left: "50%",
-            top: "50%",
-            transform: "translate3d(-50%, -50%, 0)",
-            color: "#000",
-            margin: 0,
-            fontSize: "6rem",
-          }}
-        >
-          auth0.com/events
-          <span style={{ color: "#31b96e" }}>
-            /avocado-labs-talks-episode-1/
-          </span>
-        </Subtitle>
       </Slide>
       {/* <Slide>
         <Image
@@ -446,7 +364,7 @@ function SlideDeck() {
             }}
           >
             <span style={{ fontSize: "4rem", verticalAlign: "middle" }}>
-              265
+              256
             </span>
           </Highlight>
           <span style={{ color: "#c0c5ce" }}>Bit</span>
@@ -568,7 +486,7 @@ function SlideDeck() {
             }}
           >
             <span style={{ fontSize: "4rem", verticalAlign: "middle" }}>
-              265
+              256
             </span>
           </Highlight>
           <span style={{ color: "#c0c5ce" }}>Bit</span>
@@ -690,7 +608,7 @@ function SlideDeck() {
             }}
           >
             <span style={{ fontSize: "4rem", verticalAlign: "middle" }}>
-              265
+              256
             </span>
           </Highlight>
           Bit
@@ -757,6 +675,26 @@ function SlideDeck() {
           <Highlight color="#fac863">a verifying algorithm</Highlight>
         </Text>
       </Slide>
+
+      <Slide>
+        <Image
+          src={signingUnhashed}
+          alt="A schema explaining how signing works"
+        />
+      </Slide>
+      <Slide>
+        <Image
+          src={verifyingUnhashed}
+          alt="A schema explaining how verifying works"
+        />
+      </Slide>
+      <Slide>
+        <Text>
+          Signatures are usually also{" "}
+          <Highlight color="#fac863">hashed</Highlight>
+        </Text>
+      </Slide>
+
       <Slide>
         <Image src={signing} alt="A schema explaining how signing works" />
       </Slide>
@@ -895,6 +833,25 @@ function SlideDeck() {
         <Image src={EncAsym} />
       </Slide>
       <Slide>
+        <Subtitle>Asymmetric encryption</Subtitle>\
+        <Text>
+          Example usecases are:{" "}
+          <Highlight color="#fac863">TLS, VPN, SSH</Highlight>{" "}
+        </Text>
+      </Slide>
+      <Slide>
+        <Subtitle>Asymmetric algorithms</Subtitle>
+        <Text>
+          <Highlight color="#fac863">RSA OAEP, RSA OAEP, ECDH-ES</Highlight>
+        </Text>
+      </Slide>
+      <Slide>
+        <Text>
+          <Highlight color="#fac863">Symmetric algorithms are faster</Highlight>{" "}
+          than asymmetric ones.
+        </Text>
+      </Slide>
+      <Slide>
         <Subtitle>A detailed example: RSA</Subtitle>
       </Slide>
       <Slide>
@@ -1010,22 +967,20 @@ function SlideDeck() {
         <Image src={rsaDemo} alt="A screenshot of the RSA demo" />
       </Slide>
       <Slide>
-        <Subtitle>Asymmetric encryption</Subtitle>\
         <Text>
-          Example usecases are:{" "}
-          <Highlight color="#fac863">TLS, VPN, SSH</Highlight>{" "}
+          <a
+            href="https://github.com/Sambego/rsa-demo/"
+            title="A GitHub repository with the code for the RSA demo"
+            style={{ color: "#000", borderColor: "#fac863" }}
+          >
+            https://github.com/Sambego/rsa-demo/
+          </a>
         </Text>
-      </Slide>
-      <Slide>
-        <Subtitle>Asymmetric algorithms</Subtitle>
-        <Text>
-          <Highlight color="#fac863">RSA OAEP, RSA OAEP, ECDH-ES</Highlight>
-        </Text>
-      </Slide>
-      <Slide>
-        <Text>
-          <Highlight color="#fac863">Symmetric algorithms are faster</Highlight>{" "}
-          than asymmetric ones.
+        <Text style={{ fontSize: "3rem", marginTop: "3rem" }}>
+          There are 3 branches, one with{" "}
+          <Highlight color="#fac863">simple numbers</Highlight>,<br /> one with{" "}
+          <Highlight color="#fac863">large numbers</Highlight> and one with some{" "}
+          <Highlight color="#fac863">data conversion</Highlight>.
         </Text>
       </Slide>
       {/* -- End Encription -- */}

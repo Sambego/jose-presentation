@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1226px" height="578px" viewBox="0 0 1226 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>verifying-unhashed</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Verifying">
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="332" y="292" width="230" height="153" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="333" y="470" width="230" height="104" rx="10"></rect>
+            <text id="(RSA)" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="418.96" y="424">(RSA)</tspan>
+            </text>
+            <text id="Verifying-Algorithm" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="363.745" y="353">Verifying</tspan>
+                <tspan x="354.2425" y="396">Algorithm</tspan>
+            </text>
+            <text id="Public-Key" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="350.805" y="535">Public Key</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="2" y="146" width="230" height="104" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="2" y="316" width="230" height="104" rx="10"></rect>
+            <text id="The-quick-brown-fox" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="29.11" y="181">The quick brown </tspan>
+                <tspan x="39.68" y="205">fox jumps over </tspan>
+                <tspan x="53.21" y="229">the lazy dog</tspan>
+            </text>
+            <text id="d7a8fbb307d78094-…-…" font-family="Monaco" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="26.0859375" y="340">d7a8fbb307d78094</tspan>
+                <tspan x="107.099121" y="363">…</tspan>
+                <tspan x="107.099121" y="386">…</tspan>
+                <tspan x="26.0859375" y="409">2d02d0bf37c9e592</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="662" y="316" width="230" height="104" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="992" y="146" width="230" height="274" rx="10"></rect>
+            <text id="The-quick-brown-fox" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="689.11" y="348">The quick brown </tspan>
+                <tspan x="699.68" y="372">fox jumps over </tspan>
+                <tspan x="713.21" y="396">the lazy dog</tspan>
+            </text>
+            <path id="Line" d="M579,357 L579,367 L623,367 L623,357 L647,369 L623,381 L623,371 L579,371 L579,381 L575,381 L575,357 L579,357 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M909,357 L909,367 L953,367 L953,357 L977,369 L953,381 L953,371 L909,371 L909,381 L905,381 L905,357 L909,357 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M249,187 L249,197 L953,197 L953,187 L977,199 L953,211 L953,201 L249,201 L249,211 L245,211 L245,187 L249,187 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M248,351 L248,361 L293,361 L293,351 L317,363 L293,375 L293,365 L248,365 L248,375 L244,375 L244,351 L248,351 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line-4" d="M400,414 L412,438 L402,438 L402,472 L398,472 L398,438 L388,438 L400,414 Z" fill="#000000" fill-rule="nonzero"></path>
+            <text id="Does-the-content-mat" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="1025.5475" y="228">Does the </tspan>
+                <tspan x="1035.2425" y="271">content </tspan>
+                <tspan x="1037.99" y="314">match?</tspan>
+                <tspan x="1045.095" y="357" font-family="AppleColorEmoji, Apple Color Emoji" font-weight="normal">✅ </tspan>
+                <tspan x="1115.095" y="357">  </tspan>
+                <tspan x="1134.905" y="357" font-family="AppleColorEmoji, Apple Color Emoji" font-weight="normal">❌</tspan>
+            </text>
+            <text id="/" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="1100.14" y="358">/</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
