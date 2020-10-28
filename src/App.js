@@ -11,6 +11,7 @@ import {
   Highlight,
   Video,
   Footer,
+  Quote
 } from "@sambego/diorama";
 
 import Speedy from "./video/speedy.mp4";
@@ -64,10 +65,12 @@ import EncSym from "./img/sym-enc.svg";
 import EncAsym from "./img/asym-enc.svg";
 import JWSJSON from "./img/jws-json.svg";
 import JWEJSON from "./img/jwe-json.svg";
+import Salt from "./img/salt.svg";
 
 function SlideDeck() {
   return (
     <Deck
+      presenterNotes
       footer={
         <Footer
           left={<Highlight color="#fac863">@sambego</Highlight>}
@@ -99,7 +102,7 @@ function SlideDeck() {
           alt="Creative commons"
         />
       </Slide>
-      <Slide>
+      <Slide notes="Security, Privacy, Payments, and Identity">
         <Columns>
           <div>
             <Image src={Sam} alt="A picture of me" full color="#fac863" />
@@ -109,6 +112,7 @@ function SlideDeck() {
             <List>
               <li>Developer Advocate Engineer</li>
               <li>Auth0</li>
+              <li>GDE</li>
               <li>@sambego</li>
             </List>
           </div>
@@ -150,9 +154,18 @@ function SlideDeck() {
         </Text>
       </Slide>
       <Slide>
+        <Text>
+          <strong>Disclaimer</strong>: Don't reinvent the weel,{" "}
+          <Highlight color="#fac863">
+            use existing libraries and services
+          </Highlight>{" "}
+          when doing something cryptographic.
+        </Text>
+      </Slide>
+      <Slide>
         <Subtitle>Summary</Subtitle>
         <List>
-          <li>Hashing</li>
+          <li>(Keyed) Hashing</li>
           <li>Signing</li>
           <li>Encryption</li>
           <li>JOSE</li>
@@ -198,8 +211,8 @@ function SlideDeck() {
           </Highlight>
         </Text>
       </Slide>
-      <Slide>
-        <Subtitle>Keyed hashing</Subtitle>
+      <Slide style={{ background: "#fac863" }}>
+        <Subtitle style={{ letterSpacing: "4rem" }}>Keyed hashing</Subtitle>
       </Slide>
       <Slide>
         <Text>
@@ -608,10 +621,19 @@ function SlideDeck() {
       </Slide>
 
       <Slide>
-        <Text>
-          Hashes are often used to{" "}
+        <Subtitle>
+          (Keyed) Hashes are often used to{" "}
           <Highlight color="#fac863">store passwords</Highlight>.
-        </Text>
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Text>When storing paswords, they are usually <Highlight color="#fac863">salted</Highlight> before they are hashed.</Text>
+      </Slide>
+      <Slide>
+        <Text>This has the benefit of <Highlight color="#fac863">similar passwords not having the same hash</Highlight>, and makes <Highlight color="#fac863">rainbow tables useless</Highlight>.</Text>
+      </Slide>
+      <Slide>
+        <Image src={Salt} alt="Salting schema" />
       </Slide>
       {/* -- End Hashing -- */}
 
@@ -623,6 +645,15 @@ function SlideDeck() {
         <Text>
           Digital signatures offer all properties of keyed hashes, plus{" "}
           <Highlight color="#fac863">cryptographic non-repudiation</Highlight>.
+        </Text>
+      </Slide>
+      <Slide notes="This is a legal term. Example you buy something expensive with a cheque. Your signature on that cheque makes it 'impossible' for you to claim you did not write that cheque, and the bank will claim the money from you. (Real signatures can be easily forged, digital one not so much)">      
+          <Quote style={{fontSize: '6rem'}} quotee="Wikipedia">Non-repudiation refers to a situation where a statement's <Highlight color="#fac863">author cannot successfully dispute its authorship or the validity</Highlight> of an associated contract.</Quote>
+      </Slide>
+      <Slide>
+        <Text>
+          Cryptographic non-repudiation{" "}
+          <Highlight color="#fac863">can prove who created the signature</Highlight>.
         </Text>
       </Slide>
       <Slide notes="You can do that with HMAC as well, but need to share a secret. The more a secret is shared, the less secure it gets. Using a private/public key is better.">
@@ -1764,6 +1795,11 @@ function SlideDeck() {
           >
             auth0.com/blog/how-secure-are-encryption-hashing-encoding-and-obfuscation
           </a>
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Subtitle>
+          I'll be ranting about <Highlight color="#fac863">passwords</Highlight> today at <Highlight color="#fac863">16:15</Highlight>!
         </Subtitle>
       </Slide>
       <Slide style={{ background: "#fac863" }}>
