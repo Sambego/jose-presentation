@@ -70,7 +70,7 @@ import Salt from "./img/salt.svg";
 function SlideDeck() {
   return (
     <Deck
-      presenterNotes
+      // presenterNotes
       footer={
         <Footer
           left={<Highlight color="#fac863">@sambego</Highlight>}
