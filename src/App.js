@@ -70,7 +70,7 @@ import Salt from "./img/salt.svg";
 function SlideDeck() {
   return (
     <Deck
-      // presenterNotes
+      presenterNotes
       footer={
         <Footer
           left={<Highlight color="#fac863">@sambego</Highlight>}
@@ -123,6 +123,16 @@ function SlideDeck() {
         <Text>
           <span style={{ fontFamily: "monospace" }}>npx @sambego/about-me</span>
         </Text>
+      </Slide>
+      <Slide>
+        <Subtitle>
+          <a
+            style={{ color: "#000", borderColor: "#fac863" }}
+            href="https://jose.sambego.tech"
+          >
+            jose.sambego.tech
+          </a>
+        </Subtitle>
       </Slide>
       {/* <Slide>
         <Image
@@ -691,7 +701,7 @@ function SlideDeck() {
       </Slide>
       <Slide>
         <Text>
-          A singing algorithm is usually a collection of 3 algorithms.
+          A signing algorithm is usually a collection of 3 algorithms.
           <br />
           <Highlight color="#fac863">A key generator</Highlight>,{" "}
           <Highlight color="#fac863">a signing algorithm</Highlight> and{" "}
@@ -1795,11 +1805,6 @@ function SlideDeck() {
           >
             auth0.com/blog/how-secure-are-encryption-hashing-encoding-and-obfuscation
           </a>
-        </Subtitle>
-      </Slide>
-      <Slide>
-        <Subtitle>
-          I'll be ranting about <Highlight color="#fac863">passwords</Highlight> today at <Highlight color="#fac863">16:15</Highlight>!
         </Subtitle>
       </Slide>
       <Slide style={{ background: "#fac863" }}>
