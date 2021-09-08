@@ -70,7 +70,6 @@ import Salt from "./img/salt.svg";
 function SlideDeck() {
   return (
     <Deck
-      
       footer={
         <Footer
           left={<Highlight color="#fac863">@sambego</Highlight>}
@@ -629,14 +628,16 @@ function SlideDeck() {
           Bit
         </Subtitle>
       </Slide>
-
       <Slide>
-        <Subtitle>
-          (Keyed) Hashes are often used to{" "}
-          <Highlight color="#fac863">store passwords</Highlight>.
-        </Subtitle>
+        <Subtitle>Example usecases</Subtitle>
+        <Text>
+          <Highlight color="#fac863">
+            Storing passwords, Identifying files, Cache Busting, <br/>Database indexes, Blockchain
+          </Highlight>
+        </Text>
       </Slide>
-      <Slide>
+
+      {/* <Slide>
         <Text>When storing paswords, they are usually <Highlight color="#fac863">salted</Highlight> before they are hashed.</Text>
       </Slide>
       <Slide>
@@ -644,7 +645,7 @@ function SlideDeck() {
       </Slide>
       <Slide>
         <Image src={Salt} alt="Salting schema" />
-      </Slide>
+      </Slide> */}
       {/* -- End Hashing -- */}
 
       {/* -- Start Signing -- */}
@@ -841,6 +842,14 @@ function SlideDeck() {
           </li>
         </List>
       </Slide>
+      <Slide>
+        <Subtitle>Example usecases</Subtitle>
+        <Text>
+          <Highlight color="#fac863">
+            JSON Web Tokens<sup>*</sup>, Document  signing
+          </Highlight>
+        </Text>
+      </Slide>
       {/* -- End Signing -- */}
 
       {/* -- Start Encription -- */}
@@ -873,8 +882,8 @@ function SlideDeck() {
         <Subtitle>Symmetric encryption</Subtitle>
       </Slide>
       <Slide>
+        <Subtitle>Example usecases</Subtitle>
         <Text>
-          Example usecases are:{" "}
           <Highlight color="#fac863">
             file system encryption, Wi-Fi protected access (WPA), database
             encryption
@@ -916,9 +925,11 @@ function SlideDeck() {
         <Image src={EncAsym} />
       </Slide>
       <Slide>
-        <Subtitle>Asymmetric encryption</Subtitle>\
+      <Subtitle>Asymmetric encryption</Subtitle>\
+      </Slide>
+      <Slide>
+        <Subtitle>Example usecases</Subtitle>
         <Text>
-          Example usecases are:{" "}
           <Highlight color="#fac863">TLS, VPN, SSH</Highlight>{" "}
         </Text>
       </Slide>
@@ -1755,25 +1766,25 @@ function SlideDeck() {
       </Slide>
       <Slide>
         <Text>
-          Hashing compresses and makes it virtually impossible to get to the
+          <Highlight color="#fac863">Hashing</Highlight> compresses and makes it virtually impossible to get to the
           real data.
         </Text>
       </Slide>
       <Slide>
-        <Text>Keyed hashes protect the integrety of data.</Text>
+        <Text><Highlight color="#fac863">Keyed hashes</Highlight> protect the integrety of data.</Text>
       </Slide>
       <Slide>
         <Text>
-          Digital signatures allows third parties to verify the validity and
+        <Highlight color="#fac863">Digital signatures</Highlight> allows third parties to verify the validity and
           origin of data.
         </Text>
       </Slide>
       <Slide>
-        <Text>Encryption allows only authorized people to read the data.</Text>
+        <Text><Highlight color="#fac863">Encryption</Highlight> allows only authorized people to read the data.</Text>
       </Slide>
       <Slide>
         <Text>
-          JOSE is a set of standards, based on JSON that help us with signatures
+        <Highlight color="#fac863">JOSE</Highlight> is a set of standards, based on JSON that help us with signatures
           and encryption on the web.
         </Text>
       </Slide>
