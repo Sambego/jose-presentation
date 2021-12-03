@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="940px" height="402px" viewBox="0 0 940 402" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>signing-v2-2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Signing">
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="360" y="139" width="230" height="257" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FAC863" x="360" y="5" width="230" height="104" rx="10"></rect>
+            <text id="(RSA)" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="446.96" y="327">(RSA)</tspan>
+            </text>
+            <text id="Verifying-Algorithm" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="391.745" y="256">Verifying</tspan>
+                <tspan x="382.2425" y="299">Algorithm</tspan>
+            </text>
+            <text id="Public-Key" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="377.805" y="70">Public Key</tspan>
+            </text>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="11" y="163" width="230" height="104" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="11" y="292" width="230" height="104" rx="10"></rect>
+            <rect id="Rectangle" stroke="#000000" stroke-width="4" fill="#FFFFFF" x="710" y="199" width="230" height="163" rx="10"></rect>
+            <text id="Signature-is-valid-✅" font-family="Montserrat-Bold, Montserrat" font-size="35" font-weight="bold" fill="#000000">
+                <tspan x="735.2075" y="252">Signature </tspan>
+                <tspan x="761.58" y="295">is valid</tspan>
+                <tspan x="760.6875" y="338" font-family="AppleColorEmoji, Apple Color Emoji" font-weight="normal">✅ </tspan>
+                <tspan x="830.6875" y="338">/ </tspan>
+                <tspan x="854.3125" y="338" font-family="AppleColorEmoji, Apple Color Emoji" font-weight="normal">❌</tspan>
+            </text>
+            <text id="The-quick-brown-fox" font-family="Montserrat-Bold, Montserrat" font-size="20" font-weight="bold" fill="#000000">
+                <tspan x="38.11" y="198">The quick brown </tspan>
+                <tspan x="48.68" y="222">fox jumps over </tspan>
+                <tspan x="62.21" y="246">the lazy dog</tspan>
+            </text>
+            <text id="d7a8fbb307d78094-…-…" font-family="Monaco" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="35.0859375" y="316">d7a8fbb307d78094</tspan>
+                <tspan x="116.099121" y="339">…</tspan>
+                <tspan x="116.099121" y="362">…</tspan>
+                <tspan x="35.0859375" y="385">2d02d0bf37c9e592</tspan>
+            </text>
+            <path id="Line" d="M258,204 L258,214 L302,214 L302,204 L326,216 L302,228 L302,218 L258,218 L258,228 L254,228 L254,204 L258,204 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M258,332 L258,342 L303,342 L303,332 L327,344 L303,356 L303,346 L258,346 L258,356 L254,356 L254,332 L258,332 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line" d="M618,269 L618,279 L663,279 L663,269 L687,281 L663,293 L663,283 L618,283 L618,293 L614,293 L614,269 L618,269 Z" fill="#000000" fill-rule="nonzero"></path>
+            <path id="Line-4" d="M477,108 L477,148 L487,148 L475,172 L463,148 L473,148 L473,108 L477,108 Z" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

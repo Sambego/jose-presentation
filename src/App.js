@@ -28,6 +28,8 @@ import signingUnhashed from "./img/signing-unhashed.svg";
 import signing from "./img/signing.svg";
 import verifyingUnhashed from "./img/verifying-unhashed.svg";
 import verifying from "./img/verifying.svg";
+import signingV2 from "./img/signing-v2-1.svg";
+import signingV2Verify from "./img/signing-v2-2.svg";
 // import encrypting from "./img/encrypting.svg";
 // import decrypting from "./img/decrypting.svg";
 import rsaKeyGeneration from "./img/rsa-key-generation.svg";
@@ -248,12 +250,12 @@ function SlideDeck() {
           alt="A schema illustrating how hashing works"
         />
       </Slide>
-      <Slide>
+      {/* <Slide>
         <Image
           src={keyedHashingDetail}
           alt="A schema illustrating how hashing works"
         />
-      </Slide>
+      </Slide> */}
       <Slide>
         <Subtitle>Keyed Hashing Algorithms</Subtitle>
         <Text>
@@ -712,29 +714,17 @@ function SlideDeck() {
 
       <Slide>
         <Image
-          src={signingUnhashed}
+          src={signingV2}
           alt="A schema explaining how signing works"
         />
       </Slide>
       <Slide>
         <Image
-          src={verifyingUnhashed}
+          src={signingV2Verify}
           alt="A schema explaining how verifying works"
         />
       </Slide>
-      <Slide>
-        <Text>
-          Signatures are usually also{" "}
-          <Highlight color="#fac863">hashed</Highlight>
-        </Text>
-      </Slide>
-
-      <Slide>
-        <Image src={signing} alt="A schema explaining how signing works" />
-      </Slide>
-      <Slide>
-        <Image src={verifying} alt="A schema explaining how verifying works" />
-      </Slide>
+      
       <Slide notes="RSA is named after the creators of the algorithm, Rivest–Shamir–Adleman">
         <Subtitle>Signing algorithms</Subtitle>
         <Text>
@@ -1279,9 +1269,7 @@ function SlideDeck() {
           ignature
         </Subtitle>
       </Slide>
-      <Slide>
-        <Image src={jws} alt="JWS explanation" />
-      </Slide>
+
       <Slide>
         <Subtitle
           style={{
@@ -1351,9 +1339,13 @@ function SlideDeck() {
       </Slide>
 
       <Slide>
+        <Image src={jws} alt="JWS explanation" />
+      </Slide>
+      
+      <Slide>
         <Subtitle>JOSE Header</Subtitle>
       </Slide>
-      <Slide>
+      {/* <Slide>
         <Subtitle
           style={{
             maxWidth: "80vw",
@@ -1419,7 +1411,7 @@ function SlideDeck() {
             </Highlight>
           </span>
         </Subtitle>
-      </Slide>
+      </Slide> */}
       <Slide>
         <Image src={JWSHeader} alt="JWS Header" contain />
       </Slide>
@@ -1427,7 +1419,7 @@ function SlideDeck() {
       <Slide>
         <Subtitle>Payload</Subtitle>
       </Slide>
-      <Slide>
+      {/* <Slide>
         <Subtitle
           style={{
             maxWidth: "80vw",
@@ -1493,7 +1485,7 @@ function SlideDeck() {
             </Highlight>
           </span>
         </Subtitle>
-      </Slide>
+      </Slide> */}
       <Slide>
         <Image src={JWSPayload} alt="JWS Payload" contain />
       </Slide>
@@ -1501,7 +1493,7 @@ function SlideDeck() {
       <Slide>
         <Subtitle>Signature</Subtitle>
       </Slide>
-      <Slide>
+      {/* <Slide>
         <Subtitle
           style={{
             maxWidth: "80vw",
@@ -1567,7 +1559,7 @@ function SlideDeck() {
             </Highlight>
           </span>
         </Subtitle>
-      </Slide>
+      </Slide> */}
       <Slide>
         <Image src={JWSSignature} alt="JWS Signature" contain />
       </Slide>
