@@ -119,12 +119,12 @@ function SlideDeck() {
           </div>
         </Columns>
       </Slide>
-      <Slide>
+      {/* <Slide>
         <video src={NPM} autoPlay style={{ height: "80vh" }}></video>
         <Text>
           <span style={{ fontFamily: "monospace" }}>npx @sambego/about-me</span>
         </Text>
-      </Slide>
+      </Slide> */}
       <Slide>
         <Subtitle>
           <a
@@ -264,7 +264,7 @@ function SlideDeck() {
           </Highlight>
         </Text>
       </Slide>
-      <Slide>
+      {/* <Slide>
         <Subtitle style={{ textAlign: "left", fontSize: "5rem" }}>
           <Highlight
             color="#fac863"
@@ -629,7 +629,7 @@ function SlideDeck() {
           </Highlight>
           Bit
         </Subtitle>
-      </Slide>
+      </Slide> */}
       <Slide>
         <Subtitle>Example usecases</Subtitle>
         <Text>
@@ -849,8 +849,7 @@ function SlideDeck() {
       <Slide>
         <Text>
           When encrypting data, we can not only ensure its{" "}
-          <Highlight color="#fac863">integrity and authenticity</Highlight>{" "}
-          (like keyed hashes), the data will stay{" "}
+          <Highlight color="#fac863">integrity and authenticity</Highlight>, the data will stay{" "}
           <Highlight color="#fac863">secret for outsiders</Highlight>.
         </Text>
       </Slide>
@@ -1043,6 +1042,16 @@ function SlideDeck() {
           src={rsaDecryptionFade}
           alt="Schema of how RSA decryption works"
         />
+      </Slide>
+      <Slide>
+        <Subtitle>
+          <a
+            style={{ color: "#000", borderColor: "#fac863" }}
+            href="https://rsa.sambego.tech"
+          >
+            rsa.sambego.tech
+          </a>
+        </Subtitle>
       </Slide>
       <Slide>
         <Image src={simpleRsaDemo} alt="A screenshot of the simple RSA demo" />
@@ -1804,9 +1813,19 @@ function SlideDeck() {
         <Subtitle>
           <a
             style={{ color: "#000", borderColor: "#fac863" }}
-            href="https://auth0.com/blog/how-secure-are-encryption-hashing-encoding-and-obfuscation"
+            href="https://rsa.sambego.tech"
           >
-            auth0.com/blog/how-secure-are-encryption-hashing-encoding-and-obfuscation
+            rsa.sambego.tech
+          </a>
+        </Subtitle>
+      </Slide>
+      <Slide>
+        <Subtitle>
+          <a
+            style={{ color: "#000", borderColor: "#fac863" }}
+            href="https://sha256algorithm.com/"
+          >
+            sha256algorithm.com
           </a>
         </Subtitle>
       </Slide>

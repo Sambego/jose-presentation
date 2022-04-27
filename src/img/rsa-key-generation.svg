@@ -17,7 +17,7 @@
                     <tspan x="753.119629" y="86" fill="#000000">= 3233</tspan>
                     <tspan x="879.140137" y="86" fill="#A7ADBA"></tspan>
                     <tspan x="18" y="130" fill="#000000">Private exponent (d): </tspan>
-                    <tspan x="480.075195" y="130" fill="#A7ADBA">e (mod </tspan>
+                    <tspan x="480.075195" y="130" fill="#A7ADBA">e<tspan dy="-10" font-size="20">-1</tspan> <tspan dy="10">(mod </tspan></tspan>
                     <tspan x="627.099121" y="130" font-family="Menlo-Regular, Menlo" fill="#A7ADBA">λ</tspan>
                     <tspan x="648.170898" y="130" fill="#A7ADBA">(n)) </tspan>
                     <tspan x="753.187988" y="130" fill="#000000">= 413</tspan>
