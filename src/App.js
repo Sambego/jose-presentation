@@ -729,15 +729,15 @@ function SlideDeck() {
         <Subtitle>Signing algorithms</Subtitle>
         <Text>
           The most commonly used public-key cryptography aproaches when signing
-          are <Highlight color="#fac863">RSA</Highlight>,{" "}
-          <Highlight color="#fac863">elliptic curve (EC)</Highlight> and{" "}
+          are <Highlight color="#fac863">RSA (RSASSA)</Highlight>,{" "}
+          <Highlight color="#fac863">Elliptic Curve (ECDSA)</Highlight> and{" "}
           <Highlight color="#fac863">
-            Edwards-curve Octet Key Pair (OKP)
+            Edwards Curve (EdDSA)
           </Highlight>
         </Text>
       </Slide>
       <Slide>
-        <Subtitle>RSA keys</Subtitle>
+        <Subtitle>RSA (RSASSA)</Subtitle>
         <Text>
           <Highlight color="#fac863">RS256, RS384, RS512</Highlight>
           <br />
@@ -746,20 +746,8 @@ function SlideDeck() {
         </Text>
       </Slide>
       <Slide>
-        <Subtitle>RSA keys</Subtitle>
+        <Subtitle>RSA (RSASSA)</Subtitle>
         <List>
-          <li>
-            <span role="img" aria-label="thumbs up">
-              👍
-            </span>{" "}
-            Fast verification
-          </li>
-          <li>
-            <span role="img" aria-label="thumbs up">
-              👍
-            </span>{" "}
-            CPU friendly
-          </li>
           <li>
             <span role="img" aria-label="thumbs up">
               👍
@@ -767,10 +755,16 @@ function SlideDeck() {
             Good support (RS256)
           </li>
           <li>
+            <span role="img" aria-label="thumbs up">
+              👍
+            </span>{" "}
+            Relatively simple mathematics
+          </li>
+          <li>
             <span role="img" aria-label="thumbs down">
               👎
             </span>{" "}
-            Longer keys (minimum 2056 bit is recommended)
+            Long keys (minimum 2048 bit is recommended)
           </li>
           <li>
             <span role="img" aria-label="thumbs down">
@@ -781,19 +775,19 @@ function SlideDeck() {
         </List>
       </Slide>
       <Slide>
-        <Subtitle>Elliptic curve keys</Subtitle>
+        <Subtitle>Elliptic Curve Digital Signing Algorithm (ECDSA)</Subtitle>
         <Text>
           <Highlight color="#fac863">ES256, ES384, ES512</Highlight>
         </Text>
       </Slide>
       <Slide>
-        <Subtitle>Elliptic curve keys</Subtitle>
+        <Subtitle>Elliptic Curve  Digital Signing Algorithm (ECDSA)</Subtitle>
         <List>
           <li>
             <span role="img" aria-label="thumbs up">
               👍
             </span>{" "}
-            Shorter keys (of equivalent to RSA strength)
+            Shorter keys (256 bit comparable strength to 3072 bit RSA keys)
           </li>
           <li>
             <span role="img" aria-label="thumbs up">
@@ -805,24 +799,36 @@ function SlideDeck() {
             <span role="img" aria-label="thumbs down">
               👎
             </span>{" "}
-            Slower verification
+            Complex mathematics
+          </li>
+          <li>
+            <span role="img" aria-label="thumbs down">
+              👎
+            </span>{" "}
+            Relies on a cryptographically random nonce for each signature
           </li>
         </List>
       </Slide>
       <Slide>
-        <Subtitle>Edwards-Curve Octet Keys</Subtitle>
+        <Subtitle>Edwards Curve Digital Signing Algorithm (EdDSA)</Subtitle>
         <Text>
           <Highlight color="#fac863">Ed25519, Ed448</Highlight>
         </Text>
       </Slide>
       <Slide>
-        <Subtitle>Edwards-Curve Octet Keys</Subtitle>
+        <Subtitle>Edwards Curve Digital Signing Algorithm (EdDSA)</Subtitle>
         <List>
           <li>
             <span role="img" aria-label="thumbs up">
               👍
             </span>{" "}
-            Best signing performance
+            Does not rely on a cryptographically random nonce for each signature 
+          </li>
+          <li>
+            <span role="img" aria-label="thumbs up">
+              👍
+            </span>{" "}
+            Supports the splitting of keys
           </li>
           <li>
             <span role="img" aria-label="thumbs down">
